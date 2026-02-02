@@ -1,0 +1,22 @@
+[
+    {
+        "name": "CK3 Mod ET",
+        "game": "CK3",
+        "game_root": "D:/GAMES/CONTENT/Crusader Kings III/game",
+        "mod_root": "C:/Users/JEXPO/Documents/Paradox Interactive/Crusader Kings III/mod/CK3_ExtendedTime",
+        "backup_root": "E:/MODS/Paradox Interactive/Crusader Kings III/mod/Backup_CK3",
+        "year_offset": 10000,
+        "modules": [
+            "history/provinces",
+            "history/characters",
+            "history/cultures",
+            "history/situations",
+            "history/struggles",
+            "history/titles",
+            "history/wars",
+            "bookmarks/bookmarks",
+            "bookmarks/challenge_characters",
+            "bookmarks/groups"
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+{
+    "CK3": {
+        "history/provinces": {
+            "path": "history/provinces",
+            "ignore_ext": [".info"]
+        },
+        "history/characters": {
+            "path": "history/characters",
+            "ignore_ext": [".info"]
+        },
+        "history/cultures": {
+            "path": "history/cultures",
+            "ignore_ext": [".info"]
+        },
+        "history/situations": {
+            "path": "history/situations",
+            "ignore_ext": [".info"]
+        },
+        "history/struggles": {
+            "path": "history/struggles",
+            "ignore_ext": [".info"]
+        },
+        "history/titles": {
+            "path": "history/titles",
+            "ignore_ext": [".info"]
+        },
+        "history/wars": {
+            "path": "history/wars",
+            "ignore_ext": [".info"]
+        },
+        "bookmarks/bookmarks": {
+            "path": "common/bookmarks/bookmarks",
+            "ignore_ext": [".info"]
+        },
+        "bookmarks/challenge_characters": {
+            "path": "common/bookmarks/challenge_characters",
+            "ignore_ext": [".info"]
+        },
+        "bookmarks/groups": {
+            "path": "common/bookmarks/groups",
+            "ignore_ext": [".info"]
+        }
+    }
+}
