@@ -17,6 +17,9 @@
             "bookmarks/bookmarks",
             "bookmarks/challenge_characters",
             "bookmarks/groups"
+        ],
+        "files": [
+            "common\\defines\\00_defines.txt"
         ]
     }
 ]
