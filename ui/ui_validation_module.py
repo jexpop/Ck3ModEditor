@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
+import os
+import json
 
 from core.validation import (
     collect_module_files,
@@ -13,7 +15,6 @@ class ValidationModuleTab:
         self.frame = ttk.Frame(parent)
 
         self.validation_diffs = {}
-
         self.build_ui()
 
     # ---------------------------------------------------------
@@ -22,16 +23,51 @@ class ValidationModuleTab:
     def build_ui(self):
         frame = self.frame
 
-        tk.Label(frame, text="Módulo a validar (Juego vs Backup):").pack()
+        tk.Label(frame, text="Módulo a validar:").pack()
+
         self.combo_modules = ttk.Combobox(frame, values=[], state="readonly")
         self.combo_modules.pack()
 
+        tk.Label(frame, text="Comparación:").pack(pady=5)
+
+        self.combo_compare = ttk.Combobox(
+            frame,
+            values=[
+                "Juego ↔ Mod",
+                "Mod ↔ Backup",
+                "Juego ↔ Backup"
+            ],
+            state="readonly"
+        )
+        self.combo_compare.current(0)
+        self.combo_compare.pack()
+
         tk.Button(frame, text="Comparar ficheros", command=self.run_validation).pack(pady=10)
 
-        self.listbox_results = tk.Listbox(frame, width=80, height=20)
-        self.listbox_results.pack()
+        # Treeview con colores
+        self.tree = ttk.Treeview(
+            frame,
+            columns=("estado", "file", "diff"),
+            show="headings",
+            height=20
+        )
 
-        tk.Button(frame, text="Ver diferencias", command=self.show_selected_diff).pack(pady=10)
+        self.tree.heading("estado", text="Estado")
+        self.tree.heading("file", text="Archivo")
+        self.tree.heading("diff", text="diff")
+
+        self.tree.column("estado", width=120)
+        self.tree.column("file", width=500)
+        self.tree.column("diff", width=0, stretch=False)
+
+        self.tree.pack(fill="both", expand=True)
+
+        # Colores
+        self.tree.tag_configure("modificado", foreground="#d17b00")
+        self.tree.tag_configure("añadido", foreground="green")
+        self.tree.tag_configure("eliminado", foreground="red")
+
+        self.tree.bind("<Double-1>", self.open_diff_from_tree)
 
     # ---------------------------------------------------------
     # REFRESH
@@ -49,14 +85,14 @@ class ValidationModuleTab:
         if game_modules:
             self.combo_modules.current(0)
 
-        self.listbox_results.delete(0, tk.END)
+        self.tree.delete(*self.tree.get_children())
         self.validation_diffs.clear()
 
     # ---------------------------------------------------------
     # VALIDACIÓN POR MÓDULO
     # ---------------------------------------------------------
     def run_validation(self):
-        self.listbox_results.delete(0, tk.END)
+        self.tree.delete(*self.tree.get_children())
         self.validation_diffs.clear()
 
         profile = self.app.current_profile
@@ -69,6 +105,8 @@ class ValidationModuleTab:
             messagebox.showerror("Error", "Selecciona un módulo")
             return
 
+        comparison = self.combo_compare.get()
+
         game_key = profile["game"]
         game_modules = self.app.modules.get(game_key, {})
 
@@ -76,80 +114,90 @@ class ValidationModuleTab:
             messagebox.showerror("Error", "Módulo no encontrado")
             return
 
-        # Obtener rutas
         rel_path = game_modules[module_name]["path"]
+
         game_root = profile["game_root"]
+        mod_root = profile["mod_root"]
         backup_root = profile["backup_root"]
 
-        if not game_root or not backup_root:
-            messagebox.showerror("Error", "Configura rutas de juego y backup en el perfil")
+        if not game_root or not mod_root or not backup_root:
+            messagebox.showerror("Error", "Configura rutas de juego, mod y backup en el perfil")
             return
 
         # Recolectar archivos
         game_files, backup_files = collect_module_files(game_root, backup_root, rel_path)
 
-        all_keys = sorted(set(game_files.keys()) | set(backup_files.keys()))
+        # Recolectar archivos del mod
+        mod_files, _ = collect_module_files(mod_root, mod_root, rel_path)
+
+        # Elegir comparación
+        if comparison == "Juego ↔ Mod":
+            left = game_files
+            right = mod_files
+        elif comparison == "Mod ↔ Backup":
+            left = mod_files
+            right = backup_files
+        else:  # Juego ↔ Backup
+            left = game_files
+            right = backup_files
+
+        all_keys = sorted(set(left.keys()) | set(right.keys()))
 
         for rel in all_keys:
-            g = game_files.get(rel)
-            b = backup_files.get(rel)
+            l = left.get(rel)
+            r = right.get(rel)
 
-            if g and b:
-                same, diff_lines = compare_file_contents(g, b)
+            if l and r:
+                same, diff_lines = compare_file_contents(l, r)
                 if same:
-                    display = f"[=] {rel} — IGUAL"
-                else:
-                    display = f"[!] {rel} — CAMBIADO"
-                    self.validation_diffs[rel] = diff_lines
-            elif g and not b:
-                display = f"[+] {rel} — SOLO EN JUEGO"
+                    continue  # ocultar iguales
+                estado = "Modificado"
+                self.validation_diffs[rel] = diff_lines
+            elif l and not r:
+                estado = "Eliminado"
+                diff_lines = None
             else:
-                display = f"[-] {rel} — SOLO EN BACKUP"
+                estado = "Añadido"
+                diff_lines = None
 
-            self.listbox_results.insert(tk.END, display)
+            tag = estado.lower()
+            self.tree.insert("", "end", values=(estado, rel, json.dumps(diff_lines)), tags=(tag,))
 
     # ---------------------------------------------------------
     # MOSTRAR DIFF
     # ---------------------------------------------------------
-    def show_selected_diff(self):
-        sel = self.listbox_results.curselection()
+    def open_diff_from_tree(self, event):
+        sel = self.tree.selection()
         if not sel:
             return
 
-        line = self.listbox_results.get(sel[0])
-        if "CAMBIADO" not in line:
-            messagebox.showinfo("Info", "Solo hay diff para archivos marcados como CAMBIADO")
+        iid = sel[0]
+        diff_raw = self.tree.set(iid, "diff")
+        file_name = self.tree.set(iid, "file")
+
+        if not diff_raw or diff_raw == "None":
+            messagebox.showinfo("Info", "Este archivo no tiene diferencias")
             return
 
-        rel = line.split(" ", 1)[1].split(" — ")[0].strip()
+        try:
+            diff = json.loads(diff_raw)
+        except:
+            diff = diff_raw.split("\n")
 
-        if rel not in self.validation_diffs:
-            messagebox.showerror("Error", "No se encontró diff para este archivo")
-            return
-
-        diff_lines = self.validation_diffs[rel]
-        self.show_diff_window(rel, diff_lines)
-
-    # ---------------------------------------------------------
-    # VENTANA DE DIFF
-    # ---------------------------------------------------------
-    def show_diff_window(self, rel, diff_lines):
         win = tk.Toplevel(self.frame)
-        win.title(f"Diferencias: {rel}")
+        win.title(f"Diferencias — {file_name}")
 
         text = tk.Text(win, width=120, height=40)
         text.pack(fill="both", expand=True)
 
-        for line in diff_lines:
+        for line in diff:
             if line.startswith("+") and not line.startswith("+++"):
-                text.insert(tk.END, line, "added")
+                text.insert("end", line + "\n", "added")
             elif line.startswith("-") and not line.startswith("---"):
-                text.insert(tk.END, line, "removed")
+                text.insert("end", line + "\n", "removed")
             else:
-                text.insert(tk.END, line)
-            text.insert(tk.END, "\n")
+                text.insert("end", line + "\n")
 
         text.tag_config("added", foreground="green")
         text.tag_config("removed", foreground="red")
-
         text.config(state="disabled")

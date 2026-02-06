@@ -86,6 +86,9 @@ class ProfileTab:
         if not profile:
             return
 
+        # 🔥 Mostrar el perfil seleccionado en el combo
+        self.profile_combo.set(profile["name"])
+
         # Rellenar rutas
         self.entry_game_root.delete(0, tk.END)
         self.entry_game_root.insert(0, profile["game_root"])
