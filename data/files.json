@@ -6,6 +6,9 @@
         "core_l_spanish": {
             "path": "localization/spanish/core_l_spanish.yml",
             "map_to": "localization/replace/spanish/core_l_spanish.yml"
+        },
+        "hud": {
+            "path": "gui/hud.gui"
         }
     }
 }

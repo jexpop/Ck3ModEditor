@@ -47,7 +47,8 @@
         ],
         "files": [
             "common\\defines\\00_defines.txt",
-            "core_l_spanish"
+            "core_l_spanish",
+            "hud"
         ]
     }
 ]
