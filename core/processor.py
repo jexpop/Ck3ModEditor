@@ -40,15 +40,28 @@ def process_module(game_key, module_name, game_root, mod_root, backup_root, offs
     dst_mod = os.path.join(mod_root, rel_path)
     dst_backup = os.path.join(backup_root, rel_path)
 
-    # Crear carpetas
+    # Crear carpetas destino
     os.makedirs(dst_mod, exist_ok=True)
     os.makedirs(dst_backup, exist_ok=True)
 
-    # Log
+    # ---------------------------------------------------------
+    # LOGS
+    # ---------------------------------------------------------
     log_path = os.path.join("logs", profile_name)
+
+    # Crear carpeta base de logs
     os.makedirs(log_path, exist_ok=True)
+
+    # IMPORTANTE:
+    # Si module_name contiene "/", se convierte en subcarpetas.
+    # Ejemplo: "common/artifacts/features"
+    # → logs/<perfil>/common/artifacts/features.log
     log_file = os.path.join(log_path, f"{module_name}.log")
 
+    # Crear TODAS las carpetas necesarias para el log
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+
+    # Abrir log
     with open(log_file, "a", encoding="utf-8") as log:
         log.write(f"\n--- Procesado {module_name} --- {datetime.now()}\n")
 
@@ -56,6 +69,9 @@ def process_module(game_key, module_name, game_root, mod_root, backup_root, offs
             log.write(f"ERROR: No existe la carpeta del juego: {src}\n")
             return
 
+        # ---------------------------------------------------------
+        # RECORRER ARCHIVOS DEL MÓDULO
+        # ---------------------------------------------------------
         for base, _, files in os.walk(src):
             for f in files:
                 ext = os.path.splitext(f)[1].lower()
@@ -68,6 +84,7 @@ def process_module(game_key, module_name, game_root, mod_root, backup_root, offs
                 full_mod = os.path.join(dst_mod, rel)
                 full_backup = os.path.join(dst_backup, rel)
 
+                # Crear carpetas destino
                 os.makedirs(os.path.dirname(full_mod), exist_ok=True)
                 os.makedirs(os.path.dirname(full_backup), exist_ok=True)
 

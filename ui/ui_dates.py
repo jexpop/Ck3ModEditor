@@ -59,11 +59,38 @@ class DatesTab:
 
         tk.Button(frame, text="Guardar END_DATE en el mod", command=self.save_end_date).pack(pady=5)
 
-        # Módulos a procesar
+        # ---------------------------------------------------------
+        # MÓDULOS A PROCESAR (CON SCROLL + GRID DE 8 COLUMNAS)
+        # ---------------------------------------------------------
         tk.Label(frame, text="Módulos a procesar:").pack(pady=10)
-        self.modules_frame = tk.Frame(frame)
-        self.modules_frame.pack()
 
+        container = tk.Frame(frame)
+        container.pack(fill="both", expand=True)
+
+        # Canvas con altura fija
+        self.canvas = tk.Canvas(container, height=220)
+        self.canvas.pack(side="left", fill="both", expand=True)
+
+        scrollbar = tk.Scrollbar(container, orient="vertical", command=self.canvas.yview)
+        scrollbar.pack(side="right", fill="y")
+
+        self.canvas.configure(yscrollcommand=scrollbar.set)
+
+        # Frame interno
+        self.modules_frame = tk.Frame(self.canvas)
+        self.canvas_window = self.canvas.create_window(
+            (0, 0),
+            window=self.modules_frame,
+            anchor="nw"
+        )
+
+        # Ajustar scroll
+        def update_scroll_region(event):
+            self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+
+        self.modules_frame.bind("<Configure>", update_scroll_region)
+
+        # Botón procesar
         tk.Button(frame, text="Procesar", command=self.run_processing).pack(pady=10)
 
     # ---------------------------------------------------------
@@ -121,13 +148,33 @@ class DatesTab:
         game_modules = self.app.modules.get(game_key, {})
 
         self.module_vars = {}
+        self.module_widgets = []
 
-        for module_name in game_modules.keys():
+        for module_name in sorted(game_modules.keys()):
             default_active = module_name in profile["modules"]
             var = tk.IntVar(value=1 if default_active else 0)
+
             chk = tk.Checkbutton(self.modules_frame, text=module_name, variable=var)
-            chk.pack(anchor="w")
             self.module_vars[module_name] = var
+            self.module_widgets.append(chk)
+
+        # Distribuir en 8 columnas
+        self.reflow_modules()
+
+    # ---------------------------------------------------------
+    # DISTRIBUCIÓN EN 8 COLUMNAS
+    # ---------------------------------------------------------
+    def reflow_modules(self):
+        cols = 8
+        row = 0
+        col = 0
+
+        for w in self.module_widgets:
+            w.grid(row=row, column=col, sticky="w", padx=10, pady=3)
+            col += 1
+            if col >= cols:
+                col = 0
+                row += 1
 
     # ---------------------------------------------------------
     # PROCESADO

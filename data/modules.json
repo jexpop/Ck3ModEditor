@@ -59,6 +59,168 @@
             "ignore_ext": [
                 ".info"
             ]
+        },
+        "common/artifacts/features": {
+            "path": "common/artifacts/features",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/culture/cultures": {
+            "path": "common/culture/cultures",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/customizable_localization": {
+            "path": "common/customizable_localization",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/decisions": {
+            "path": "common/decisions",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/decisions/dlc_decisions": {
+            "path": "common/decisions/dlc_decisions",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/decisions/dlc_decisions/fp_1": {
+            "path": "common/decisions/dlc_decisions/fp_1",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/decisions/dlc_decisions/fp_3": {
+            "path": "common/decisions/dlc_decisions/fp_3",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/decisions/dlc_decisions/tgp": {
+            "path": "common/decisions/dlc_decisions/tgp",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/epidemics": {
+            "path": "common/epidemics",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/on_action": {
+            "path": "common/on_action",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/script_values": {
+            "path": "common/script_values",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/scripted_effects": {
+            "path": "common/scripted_effects",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/scripted_modifiers": {
+            "path": "common/scripted_modifiers",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "common/scripted_triggers": {
+            "path": "common/scripted_triggers",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events": {
+            "path": "events",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/artifacts": {
+            "path": "events/artifacts",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/culture_events": {
+            "path": "events/culture_events",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/dlc/bp2": {
+            "path": "events/dlc/bp2",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/dlc/ce1": {
+            "path": "events/dlc/ce1",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/dlc/ep3": {
+            "path": "events/dlc/ep3",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/dlc/fp1": {
+            "path": "events/dlc/fp1",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/dlc/tgp": {
+            "path": "events/dlc/tgp",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/lifestyles/scholarship_lifestyle": {
+            "path": "events/lifestyles/scholarship_lifestyle",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/lifestyles/warfare_lifestyle": {
+            "path": "events/lifestyles/warfare_lifestyle",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/religion_events": {
+            "path": "events/religion_events",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "events/yearly_events": {
+            "path": "events/yearly_events",
+            "ignore_ext": [
+                ".info"
+            ]
+        },
+        "gfx/portraits/portrait_modifiers": {
+            "path": "gfx/portraits/portrait_modifiers",
+            "ignore_ext": [
+                ".info"
+            ]
         }
     }
 }
