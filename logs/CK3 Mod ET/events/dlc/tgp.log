@@ -1,38 +1,76 @@
 
---- Procesado events/dlc/tgp --- 2026-02-08 01:18:50.498785
-Procesado: tgp_ceremonial_liege_events.txt
-Procesado: tgp_child_personality_events.txt
-Procesado: tgp_china_career_events.txt
-Procesado: tgp_china_decision_events.txt
-Procesado: tgp_china_ministry_events.txt
-Procesado: tgp_china_yearly_events.txt
-Procesado: tgp_commission_book.txt
-Procesado: tgp_dynastic_cycle_decision_events.txt
-Procesado: tgp_dynastic_cycle_events.txt
-Procesado: tgp_dynastic_cycle_flavor_events.txt
-Procesado: tgp_east_asia_decision_events.txt
-Procesado: tgp_east_asia_interaction_events.txt
-Procesado: tgp_faction_events.txt
-Procesado: tgp_genpei_character_events.txt
-Procesado: tgp_governor_contract_events.txt
-Procesado: tgp_governor_contract_events_2000.txt
-Procesado: tgp_house_blocs.txt
-Procesado: tgp_interaction_events.txt
-Procesado: tgp_japan_career_events.txt
-Procesado: tgp_japan_decision_events.txt
-Procesado: tgp_japan_general_events.txt
-Procesado: tgp_japan_yearly_events.txt
-Procesado: tgp_japan_yearly_events_ariana.txt
-Procesado: tgp_korea_decision_events.txt
-Procesado: tgp_maintenance_events.txt
-Procesado: tgp_mandala_capital_events.txt
-Procesado: tgp_mandala_devaraja_events.txt
-Procesado: tgp_mandala_events.txt
-Procesado: tgp_mandala_task_contract_events.txt
-Procesado: tgp_mentoring_scheme_events.txt
-Procesado: tgp_movement_events.txt
-Procesado: tgp_natural_disaster_contract_events.txt
-Procesado: tgp_natural_disaster_flavor_events.txt
-Procesado: tgp_silk_road_events.txt
-Procesado: tgp_tai_migration_events.txt
-Procesado: tgp_tribute_mission_events.txt
+--- Procesado events/dlc/tgp --- 2026-02-08 14:15:52.866016
+Sin cambios de fecha (no copiado al mod): tgp_ceremonial_liege_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_child_personality_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_career_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_decision_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_ministry_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_yearly_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_commission_book.txt
+Sin cambios de fecha (no copiado al mod): tgp_dynastic_cycle_decision_events.txt
+Procesado (cambia fecha): tgp_dynastic_cycle_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_dynastic_cycle_flavor_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_east_asia_decision_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_east_asia_interaction_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_faction_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_genpei_character_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_governor_contract_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_governor_contract_events_2000.txt
+Sin cambios de fecha (no copiado al mod): tgp_house_blocs.txt
+Sin cambios de fecha (no copiado al mod): tgp_interaction_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_career_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_decision_events.txt
+Procesado (cambia fecha): tgp_japan_general_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_yearly_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_yearly_events_ariana.txt
+Sin cambios de fecha (no copiado al mod): tgp_korea_decision_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_maintenance_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_capital_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_devaraja_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_task_contract_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mentoring_scheme_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_movement_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_natural_disaster_contract_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_natural_disaster_flavor_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_silk_road_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_tai_migration_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_tribute_mission_events.txt
+
+--- Procesado events/dlc/tgp --- 2026-02-08 14:22:14.884479
+Sin cambios de fecha (no copiado al mod): tgp_ceremonial_liege_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_child_personality_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_career_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_decision_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_ministry_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_china_yearly_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_commission_book.txt
+Sin cambios de fecha (no copiado al mod): tgp_dynastic_cycle_decision_events.txt
+Procesado (cambia fecha): tgp_dynastic_cycle_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_dynastic_cycle_flavor_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_east_asia_decision_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_east_asia_interaction_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_faction_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_genpei_character_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_governor_contract_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_governor_contract_events_2000.txt
+Sin cambios de fecha (no copiado al mod): tgp_house_blocs.txt
+Sin cambios de fecha (no copiado al mod): tgp_interaction_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_career_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_decision_events.txt
+Procesado (cambia fecha): tgp_japan_general_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_yearly_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_japan_yearly_events_ariana.txt
+Sin cambios de fecha (no copiado al mod): tgp_korea_decision_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_maintenance_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_capital_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_devaraja_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_task_contract_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_mentoring_scheme_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_movement_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_natural_disaster_contract_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_natural_disaster_flavor_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_silk_road_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_tai_migration_events.txt
+Sin cambios de fecha (no copiado al mod): tgp_tribute_mission_events.txt

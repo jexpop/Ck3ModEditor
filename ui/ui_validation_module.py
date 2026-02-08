@@ -114,7 +114,9 @@ class ValidationModuleTab:
             messagebox.showerror("Error", "Módulo no encontrado")
             return
 
-        rel_path = game_modules[module_name]["path"]
+        cfg = game_modules[module_name]
+        rel_path = cfg["path"]
+        ignore_ext = cfg.get("ignore_ext", [])
 
         game_root = profile["game_root"]
         mod_root = profile["mod_root"]
@@ -126,8 +128,6 @@ class ValidationModuleTab:
 
         # Recolectar archivos
         game_files, backup_files = collect_module_files(game_root, backup_root, rel_path)
-
-        # Recolectar archivos del mod
         mod_files, _ = collect_module_files(mod_root, mod_root, rel_path)
 
         # Elegir comparación
@@ -144,6 +144,12 @@ class ValidationModuleTab:
         all_keys = sorted(set(left.keys()) | set(right.keys()))
 
         for rel in all_keys:
+            ext = os.path.splitext(rel)[1].lower()
+
+            # 🔥 Ignorar extensiones definidas en modules.json
+            if ext in ignore_ext:
+                continue
+
             l = left.get(rel)
             r = right.get(rel)
 

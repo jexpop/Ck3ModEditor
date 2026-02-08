@@ -21,9 +21,9 @@ def load_modules():
 def process_module(game_key, module_name, game_root, mod_root, backup_root, offset, profile_name):
     """
     Procesa un módulo:
-    - Copia archivos del juego al mod
-    - Aplica offset de fechas
-    - Crea backups deterministas
+    - Copia archivos del juego al backup SIEMPRE
+    - Copia archivos al mod SOLO si realmente cambian (offset aplicado)
+    - NO crea carpetas vacías en el mod
     - Genera logs
     """
 
@@ -40,28 +40,18 @@ def process_module(game_key, module_name, game_root, mod_root, backup_root, offs
     dst_mod = os.path.join(mod_root, rel_path)
     dst_backup = os.path.join(backup_root, rel_path)
 
-    # Crear carpetas destino
-    os.makedirs(dst_mod, exist_ok=True)
+    # Crear carpeta base del backup (SIEMPRE)
     os.makedirs(dst_backup, exist_ok=True)
 
     # ---------------------------------------------------------
     # LOGS
     # ---------------------------------------------------------
     log_path = os.path.join("logs", profile_name)
-
-    # Crear carpeta base de logs
     os.makedirs(log_path, exist_ok=True)
 
-    # IMPORTANTE:
-    # Si module_name contiene "/", se convierte en subcarpetas.
-    # Ejemplo: "common/artifacts/features"
-    # → logs/<perfil>/common/artifacts/features.log
     log_file = os.path.join(log_path, f"{module_name}.log")
-
-    # Crear TODAS las carpetas necesarias para el log
     os.makedirs(os.path.dirname(log_file), exist_ok=True)
 
-    # Abrir log
     with open(log_file, "a", encoding="utf-8") as log:
         log.write(f"\n--- Procesado {module_name} --- {datetime.now()}\n")
 
@@ -84,20 +74,46 @@ def process_module(game_key, module_name, game_root, mod_root, backup_root, offs
                 full_mod = os.path.join(dst_mod, rel)
                 full_backup = os.path.join(dst_backup, rel)
 
-                # Crear carpetas destino
-                os.makedirs(os.path.dirname(full_mod), exist_ok=True)
+                # Crear carpeta destino del backup
                 os.makedirs(os.path.dirname(full_backup), exist_ok=True)
 
-                # Copiar backup determinista
+                # ---------------------------------------------------------
+                # COPIA SIEMPRE AL BACKUP
+                # ---------------------------------------------------------
                 shutil.copy2(full_src, full_backup)
 
-                # Procesar archivo
+                # ---------------------------------------------------------
+                # PROCESAR ARCHIVOS DE TEXTO
+                # ---------------------------------------------------------
                 if ext in [".txt", ".yml"]:
+                    # Leer original
+                    try:
+                        with open(full_src, "r", encoding="utf-8") as f_in:
+                            original = f_in.read()
+                    except UnicodeDecodeError:
+                        with open(full_src, "r", encoding="latin-1") as f_in:
+                            original = f_in.read()
+
+                    # Aplicar offset
                     processed = apply_offset_to_file(full_src, offset)
-                    with open(full_mod, "w", encoding="utf-8") as out:
-                        out.write(processed)
-                    log.write(f"Procesado: {rel}\n")
+
+                    # ¿Hubo cambios reales?
+                    if processed != original:
+                        # Crear carpeta SOLO si se va a copiar al mod
+                        os.makedirs(os.path.dirname(full_mod), exist_ok=True)
+
+                        with open(full_mod, "w", encoding="utf-8") as out:
+                            out.write(processed)
+
+                        log.write(f"Procesado (cambia fecha): {rel}\n")
+                    else:
+                        log.write(f"Sin cambios de fecha (no copiado al mod): {rel}\n")
+
                 else:
+                    # ---------------------------------------------------------
+                    # ARCHIVOS NO TEXTUALES → copiar siempre al mod
+                    # ---------------------------------------------------------
+                    os.makedirs(os.path.dirname(full_mod), exist_ok=True)
                     shutil.copy2(full_src, full_mod)
                     log.write(f"Copiado sin cambios: {rel}\n")
 

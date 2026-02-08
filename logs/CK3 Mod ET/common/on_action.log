@@ -1,167 +1,334 @@
 
---- Procesado common/on_action --- 2026-02-08 01:18:46.286011
-Procesado: accolade_on_actions.txt
-Procesado: alliance_on_actions.txt
-Procesado: army_on_actions.txt
-Procesado: barter_on_actions.txt
-Procesado: birthday.txt
-Procesado: bp2_on_actions.txt
-Procesado: ce1_on_actions.txt
-Procesado: character_levels.txt
-Procesado: childhood_on_actions.txt
-Procesado: child_birth_on_actions.txt
-Procesado: clan_events_on_actions.txt
-Procesado: combat_on_actions.txt
-Procesado: confederation_on_actions.txt
-Procesado: conqueror_on_actions.txt
-Procesado: councillor_on_actions.txt
-Procesado: county_on_actions.txt
-Procesado: courtier_guest_management_on_actions.txt
-Procesado: court_events.txt
-Procesado: court_grandeur_on_actions.txt
-Procesado: court_maintenance_on_actions.txt
-Procesado: court_position_on_action.txt
-Procesado: court_type_on_actions.txt
-Procesado: culture_on_actions.txt
-Procesado: death.txt
-Procesado: decision_on_actions.txt
-Procesado: diarchy_on_action.txt
-Procesado: domicile_on_actions.txt
-Procesado: dynastic_cycle_on_actions.txt
-Procesado: dynasty_on_actions.txt
-Procesado: ep1_inspirations_on_actions.txt
-Procesado: ep3_on_actions.txt
-Procesado: faction_on_actions.txt
-Procesado: fp1_on_actions.txt
-Procesado: fp2_on_actions.txt
-Procesado: fp3_on_actions.txt
-Procesado: game_start.txt
-Procesado: governance_on_actions.txt
-Procesado: health_on_actions.txt
-Procesado: holy_order_on_actions.txt
-Procesado: hook_on_actions.txt
-Procesado: inventory_on_actions.txt
-Procesado: knight_on_actions.txt
-Procesado: mandate_on_actions.txt
-Procesado: marriage_concubinage.txt
-Procesado: mercenary_on_actions.txt
-Procesado: player_select_destiny_on_actions.txt
-Procesado: prison_on_actions.txt
-Procesado: province_on_actions.txt
-Procesado: realm_maintenance_on_actions.txt
-Procesado: religion_on_actions.txt
-Procesado: royal_court_acquisition.txt
-Procesado: ruler_designer.txt
-Procesado: scheme_on_actions.txt
-Procesado: stress_coping_decisions_on_actions.txt
-Procesado: stress_on_actions.txt
-Procesado: struggle_on_actions.txt
-Procesado: task_contract_on_actions.txt
-Procesado: title_on_actions.txt
-Procesado: traits_on_actions.txt
-Procesado: travel_on_actions.txt
-Procesado: tutorial.txt
-Procesado: war_on_actions.txt
-Procesado: witch_on_actions.txt
-Procesado: yearly_groups_on_actions.txt
-Procesado: yearly_on_actions.txt
-Procesado: activities\activities_on_actions.txt
-Procesado: activities\coronation_on_actions.txt
-Procesado: activities\debate_on_actions.txt
-Procesado: activities\feast_on_actions.txt
-Procesado: activities\festival_on_actions.txt
-Procesado: activities\hold_court_on_actions.txt
-Procesado: activities\hunt_on_actions.txt
-Procesado: activities\imperial_examination_on_actions.txt
-Procesado: activities\journey_on_actions.txt
-Procesado: activities\pilgrimage_on_actions.txt
-Procesado: activities\playdate_on_actions.txt
-Procesado: activities\roaming_on_actions.txt
-Procesado: activities\survey_on_actions.txt
-Procesado: dlc\bp2\bp2_adult_education_on_action.txt
-Procesado: dlc\bp2\bp2_destiny_child_on_action.txt
-Procesado: dlc\bp2\bp2_hostage_on_actions.txt
-Procesado: dlc\bp2\bp2_pet_rock_on_actions.txt
-Procesado: dlc\ce1\ce1_funeral_on_actions.txt
-Procesado: dlc\ep1\ep1_court_language_on_actions.txt
-Procesado: dlc\ep1\ep1_inspiration_on_actions.txt
-Procesado: dlc\ep1\ep1_pay_homage_on_actions.txt
-Procesado: dlc\ep1\ep1_petition_liege_on_actions.txt
-Procesado: dlc\ep2\ep2_tournament_on_actions.txt
-Procesado: dlc\ep2\ep2_tour_on_actions.txt
-Procesado: dlc\ep2\ep2_wedding_on_actions.txt
-Procesado: dlc\ep3\camp_party_on_action.txt
-Procesado: dlc\ep3\chariot_race_on_action.txt
-Procesado: dlc\ep3\el_cid_story_cycle_on_action.txt
-Procesado: dlc\ep3\governorship_confirmation_on_action.txt
-Procesado: dlc\ep3\grand_ambitions_story_cycle_on_action.txt
-Procesado: dlc\ep3\harrying_of_the_north_on_action.txt
-Procesado: dlc\ep3\story_adventurer_ai_contract.txt
-Procesado: dlc\ep3\violet_poet_on_action.txt
-Procesado: dlc\fp2\fp2_other_decision_on_actions.txt
-Procesado: dlc\mpo\mpo_on_actions_2.txt
-Procesado: dlc\mpo\mpo_season_events_on_actions.txt
-Procesado: dlc\mpo\mpo_the_great_steppe_on_actions.txt
-Procesado: dlc\tgp\tgp_china_minister_on_action.txt
-Procesado: dlc\tgp\tgp_china_yearly_on_actions.txt
-Procesado: dlc\tgp\tgp_japan_poetry_on_actions.txt
-Procesado: dlc\tgp\tgp_japan_yearly_on_actions.txt
-Procesado: dlc\tgp\tgp_mandala_on_actions.txt
-Procesado: dlc\tgp\tgp_mandala_yearly_on_actions.txt
-Procesado: dlc\tgp\tgp_natural_disaster_on_actions.txt
-Procesado: dlc\tgp\tgp_pledge_loyalty_to_liege_on_actions.txt
-Procesado: dlc\tgp\tgp_silk_road_on_actions.txt
-Procesado: dlc\tgp\tgp_tribute_mission_on_actions.txt
-Procesado: lifestyles\diplomacy_lifestyle_on_actions.txt
-Procesado: lifestyles\general_lifestyle_on_actions.txt
-Procesado: lifestyles\intrigue_lifestyle_on_actions.txt
-Procesado: lifestyles\learning_lifestyle_on_actions.txt
-Procesado: lifestyles\martial_lifestyle_on_actions.txt
-Procesado: lifestyles\stewardship_lifestyle_on_actions.txt
-Procesado: lifestyles\wanderer_lifestyle_on_actions.txt
-Procesado: relations\bishop_on_actions.txt
-Procesado: relations\jester_on_actions.txt
-Procesado: relations\parent_on_actions.txt
-Procesado: relations\relation_on_actions.txt
-Procesado: relations\sibling_on_actions.txt
-Procesado: relations\spouse_on_actions.txt
-Procesado: relations\vassal_on_actions.txt
-Procesado: schemes\abduct_on_actions.txt
-Procesado: schemes\befriend_on_actions.txt
-Procesado: schemes\claim_throne_on_actions.txt
-Procesado: schemes\coerce_and_leverage_contribution_on_actions.txt
-Procesado: schemes\coerce_tributary_on_actions.txt
-Procesado: schemes\court_on_actions.txt
-Procesado: schemes\disbelieve_mandala_on_actions.txt
-Procesado: schemes\elope_on_actions.txt
-Procesado: schemes\fabricate_hook_on_actions.txt
-Procesado: schemes\learn_language_on_actions.txt
-Procesado: schemes\murder_on_actions.txt
-Procesado: schemes\seduce_on_actions.txt
-Procesado: schemes\steal_back_artifact_on_actions.txt
-Procesado: schemes\steal_herd_on_actions.txt
-Procesado: schemes\study_confucian_classics_on_actions.txt
-Procesado: schemes\sway_on_actions.txt
-Procesado: story_cycles\ep3_story_cycle_admin_eunuch_on_actions.txt
-Procesado: story_cycles\mpo_story_cycle_temujin_flavor.txt
-Procesado: story_cycles\story_cycle_cat_on_actions.txt
-Procesado: story_cycles\story_cycle_dog_on_actions.txt
-Procesado: story_cycles\story_cycle_doppelganger_on_actions.txt
-Procesado: story_cycles\story_cycle_eagle_on_actions.txt
-Procesado: story_cycles\story_cycle_foreign_raised_reformer_on_actions.txt
-Procesado: story_cycles\story_cycle_hostage_loyalty_on_actions.txt
-Procesado: story_cycles\story_cycle_house_feud_on_actions.txt
-Procesado: story_cycles\story_cycle_hunt_mystical_animal_on_actions.txt
-Procesado: story_cycles\story_cycle_imaginary_friend_on_actions.txt
-Procesado: story_cycles\story_cycle_murders_at_court_on_actions.txt
-Procesado: story_cycles\story_cycle_party_baron_on_actions.txt
-Procesado: story_cycles\story_cycle_peasant_affair_on_actions.txt
-Procesado: story_cycles\story_cycle_roman_restoration_on_actions.txt
-Procesado: story_cycles\story_cycle_statecraft_lifestyle_respected_liege_on_actions.txt
-Procesado: story_cycles\story_cycle_sycophant_on_actions.txt
-Procesado: story_cycles\story_cycle_tax_rivalry_on_actions.txt
-Procesado: story_cycles\story_cycle_turkic_tribe_on_actions.txt
-Procesado: story_cycles\story_cycle_unity_decisions_on_actions.txt
-Procesado: story_cycles\story_cycle_visited_by_ghosts_on_actions.txt
-Procesado: story_cycles\story_cycle_warhorse_on_actions.txt
-Procesado: story_cycles\story_cycle_witch_trial_on_actions.txt
+--- Procesado common/on_action --- 2026-02-08 14:15:38.123572
+Sin cambios de fecha (no copiado al mod): accolade_on_actions.txt
+Sin cambios de fecha (no copiado al mod): alliance_on_actions.txt
+Sin cambios de fecha (no copiado al mod): army_on_actions.txt
+Sin cambios de fecha (no copiado al mod): barter_on_actions.txt
+Sin cambios de fecha (no copiado al mod): birthday.txt
+Sin cambios de fecha (no copiado al mod): bp2_on_actions.txt
+Sin cambios de fecha (no copiado al mod): ce1_on_actions.txt
+Sin cambios de fecha (no copiado al mod): character_levels.txt
+Sin cambios de fecha (no copiado al mod): childhood_on_actions.txt
+Sin cambios de fecha (no copiado al mod): child_birth_on_actions.txt
+Sin cambios de fecha (no copiado al mod): clan_events_on_actions.txt
+Sin cambios de fecha (no copiado al mod): combat_on_actions.txt
+Sin cambios de fecha (no copiado al mod): confederation_on_actions.txt
+Sin cambios de fecha (no copiado al mod): conqueror_on_actions.txt
+Sin cambios de fecha (no copiado al mod): councillor_on_actions.txt
+Sin cambios de fecha (no copiado al mod): county_on_actions.txt
+Sin cambios de fecha (no copiado al mod): courtier_guest_management_on_actions.txt
+Sin cambios de fecha (no copiado al mod): court_events.txt
+Sin cambios de fecha (no copiado al mod): court_grandeur_on_actions.txt
+Sin cambios de fecha (no copiado al mod): court_maintenance_on_actions.txt
+Sin cambios de fecha (no copiado al mod): court_position_on_action.txt
+Sin cambios de fecha (no copiado al mod): court_type_on_actions.txt
+Sin cambios de fecha (no copiado al mod): culture_on_actions.txt
+Sin cambios de fecha (no copiado al mod): death.txt
+Sin cambios de fecha (no copiado al mod): decision_on_actions.txt
+Sin cambios de fecha (no copiado al mod): diarchy_on_action.txt
+Sin cambios de fecha (no copiado al mod): domicile_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dynastic_cycle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dynasty_on_actions.txt
+Sin cambios de fecha (no copiado al mod): ep1_inspirations_on_actions.txt
+Sin cambios de fecha (no copiado al mod): ep3_on_actions.txt
+Sin cambios de fecha (no copiado al mod): faction_on_actions.txt
+Sin cambios de fecha (no copiado al mod): fp1_on_actions.txt
+Sin cambios de fecha (no copiado al mod): fp2_on_actions.txt
+Sin cambios de fecha (no copiado al mod): fp3_on_actions.txt
+Procesado (cambia fecha): game_start.txt
+Sin cambios de fecha (no copiado al mod): governance_on_actions.txt
+Sin cambios de fecha (no copiado al mod): health_on_actions.txt
+Sin cambios de fecha (no copiado al mod): holy_order_on_actions.txt
+Sin cambios de fecha (no copiado al mod): hook_on_actions.txt
+Sin cambios de fecha (no copiado al mod): inventory_on_actions.txt
+Sin cambios de fecha (no copiado al mod): knight_on_actions.txt
+Sin cambios de fecha (no copiado al mod): mandate_on_actions.txt
+Sin cambios de fecha (no copiado al mod): marriage_concubinage.txt
+Sin cambios de fecha (no copiado al mod): mercenary_on_actions.txt
+Sin cambios de fecha (no copiado al mod): player_select_destiny_on_actions.txt
+Sin cambios de fecha (no copiado al mod): prison_on_actions.txt
+Sin cambios de fecha (no copiado al mod): province_on_actions.txt
+Sin cambios de fecha (no copiado al mod): realm_maintenance_on_actions.txt
+Procesado (cambia fecha): religion_on_actions.txt
+Sin cambios de fecha (no copiado al mod): royal_court_acquisition.txt
+Sin cambios de fecha (no copiado al mod): ruler_designer.txt
+Sin cambios de fecha (no copiado al mod): scheme_on_actions.txt
+Sin cambios de fecha (no copiado al mod): stress_coping_decisions_on_actions.txt
+Sin cambios de fecha (no copiado al mod): stress_on_actions.txt
+Sin cambios de fecha (no copiado al mod): struggle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): task_contract_on_actions.txt
+Procesado (cambia fecha): title_on_actions.txt
+Sin cambios de fecha (no copiado al mod): traits_on_actions.txt
+Sin cambios de fecha (no copiado al mod): travel_on_actions.txt
+Sin cambios de fecha (no copiado al mod): tutorial.txt
+Sin cambios de fecha (no copiado al mod): war_on_actions.txt
+Sin cambios de fecha (no copiado al mod): witch_on_actions.txt
+Sin cambios de fecha (no copiado al mod): yearly_groups_on_actions.txt
+Procesado (cambia fecha): yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\activities_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\coronation_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\debate_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\feast_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\festival_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\hold_court_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\hunt_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\imperial_examination_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\journey_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\pilgrimage_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\playdate_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\roaming_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\survey_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_adult_education_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_destiny_child_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_hostage_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_pet_rock_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ce1\ce1_funeral_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_court_language_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_inspiration_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_pay_homage_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_petition_liege_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep2\ep2_tournament_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep2\ep2_tour_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep2\ep2_wedding_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\camp_party_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\chariot_race_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\el_cid_story_cycle_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\governorship_confirmation_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\grand_ambitions_story_cycle_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\harrying_of_the_north_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\story_adventurer_ai_contract.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\violet_poet_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\fp2\fp2_other_decision_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\mpo\mpo_on_actions_2.txt
+Sin cambios de fecha (no copiado al mod): dlc\mpo\mpo_season_events_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\mpo\mpo_the_great_steppe_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_china_minister_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_china_yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_japan_poetry_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_japan_yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_mandala_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_mandala_yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_natural_disaster_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_pledge_loyalty_to_liege_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_silk_road_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_tribute_mission_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\diplomacy_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\general_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\intrigue_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\learning_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\martial_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\stewardship_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\wanderer_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\bishop_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\jester_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\parent_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\relation_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\sibling_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\spouse_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\vassal_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\abduct_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\befriend_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\claim_throne_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\coerce_and_leverage_contribution_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\coerce_tributary_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\court_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\disbelieve_mandala_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\elope_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\fabricate_hook_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\learn_language_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\murder_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\seduce_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\steal_back_artifact_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\steal_herd_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\study_confucian_classics_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\sway_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\ep3_story_cycle_admin_eunuch_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\mpo_story_cycle_temujin_flavor.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_cat_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_dog_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_doppelganger_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_eagle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_foreign_raised_reformer_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_hostage_loyalty_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_house_feud_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_hunt_mystical_animal_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_imaginary_friend_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_murders_at_court_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_party_baron_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_peasant_affair_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_roman_restoration_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_statecraft_lifestyle_respected_liege_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_sycophant_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_tax_rivalry_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_turkic_tribe_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_unity_decisions_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_visited_by_ghosts_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_warhorse_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_witch_trial_on_actions.txt
+
+--- Procesado common/on_action --- 2026-02-08 14:22:11.685084
+Sin cambios de fecha (no copiado al mod): accolade_on_actions.txt
+Sin cambios de fecha (no copiado al mod): alliance_on_actions.txt
+Sin cambios de fecha (no copiado al mod): army_on_actions.txt
+Sin cambios de fecha (no copiado al mod): barter_on_actions.txt
+Sin cambios de fecha (no copiado al mod): birthday.txt
+Sin cambios de fecha (no copiado al mod): bp2_on_actions.txt
+Sin cambios de fecha (no copiado al mod): ce1_on_actions.txt
+Sin cambios de fecha (no copiado al mod): character_levels.txt
+Sin cambios de fecha (no copiado al mod): childhood_on_actions.txt
+Sin cambios de fecha (no copiado al mod): child_birth_on_actions.txt
+Sin cambios de fecha (no copiado al mod): clan_events_on_actions.txt
+Sin cambios de fecha (no copiado al mod): combat_on_actions.txt
+Sin cambios de fecha (no copiado al mod): confederation_on_actions.txt
+Sin cambios de fecha (no copiado al mod): conqueror_on_actions.txt
+Sin cambios de fecha (no copiado al mod): councillor_on_actions.txt
+Sin cambios de fecha (no copiado al mod): county_on_actions.txt
+Sin cambios de fecha (no copiado al mod): courtier_guest_management_on_actions.txt
+Sin cambios de fecha (no copiado al mod): court_events.txt
+Sin cambios de fecha (no copiado al mod): court_grandeur_on_actions.txt
+Sin cambios de fecha (no copiado al mod): court_maintenance_on_actions.txt
+Sin cambios de fecha (no copiado al mod): court_position_on_action.txt
+Sin cambios de fecha (no copiado al mod): court_type_on_actions.txt
+Sin cambios de fecha (no copiado al mod): culture_on_actions.txt
+Sin cambios de fecha (no copiado al mod): death.txt
+Sin cambios de fecha (no copiado al mod): decision_on_actions.txt
+Sin cambios de fecha (no copiado al mod): diarchy_on_action.txt
+Sin cambios de fecha (no copiado al mod): domicile_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dynastic_cycle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dynasty_on_actions.txt
+Sin cambios de fecha (no copiado al mod): ep1_inspirations_on_actions.txt
+Sin cambios de fecha (no copiado al mod): ep3_on_actions.txt
+Sin cambios de fecha (no copiado al mod): faction_on_actions.txt
+Sin cambios de fecha (no copiado al mod): fp1_on_actions.txt
+Sin cambios de fecha (no copiado al mod): fp2_on_actions.txt
+Sin cambios de fecha (no copiado al mod): fp3_on_actions.txt
+Procesado (cambia fecha): game_start.txt
+Sin cambios de fecha (no copiado al mod): governance_on_actions.txt
+Sin cambios de fecha (no copiado al mod): health_on_actions.txt
+Sin cambios de fecha (no copiado al mod): holy_order_on_actions.txt
+Sin cambios de fecha (no copiado al mod): hook_on_actions.txt
+Sin cambios de fecha (no copiado al mod): inventory_on_actions.txt
+Sin cambios de fecha (no copiado al mod): knight_on_actions.txt
+Sin cambios de fecha (no copiado al mod): mandate_on_actions.txt
+Sin cambios de fecha (no copiado al mod): marriage_concubinage.txt
+Sin cambios de fecha (no copiado al mod): mercenary_on_actions.txt
+Sin cambios de fecha (no copiado al mod): player_select_destiny_on_actions.txt
+Sin cambios de fecha (no copiado al mod): prison_on_actions.txt
+Sin cambios de fecha (no copiado al mod): province_on_actions.txt
+Sin cambios de fecha (no copiado al mod): realm_maintenance_on_actions.txt
+Procesado (cambia fecha): religion_on_actions.txt
+Sin cambios de fecha (no copiado al mod): royal_court_acquisition.txt
+Sin cambios de fecha (no copiado al mod): ruler_designer.txt
+Sin cambios de fecha (no copiado al mod): scheme_on_actions.txt
+Sin cambios de fecha (no copiado al mod): stress_coping_decisions_on_actions.txt
+Sin cambios de fecha (no copiado al mod): stress_on_actions.txt
+Sin cambios de fecha (no copiado al mod): struggle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): task_contract_on_actions.txt
+Procesado (cambia fecha): title_on_actions.txt
+Sin cambios de fecha (no copiado al mod): traits_on_actions.txt
+Sin cambios de fecha (no copiado al mod): travel_on_actions.txt
+Sin cambios de fecha (no copiado al mod): tutorial.txt
+Sin cambios de fecha (no copiado al mod): war_on_actions.txt
+Sin cambios de fecha (no copiado al mod): witch_on_actions.txt
+Sin cambios de fecha (no copiado al mod): yearly_groups_on_actions.txt
+Procesado (cambia fecha): yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\activities_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\coronation_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\debate_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\feast_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\festival_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\hold_court_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\hunt_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\imperial_examination_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\journey_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\pilgrimage_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\playdate_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\roaming_on_actions.txt
+Sin cambios de fecha (no copiado al mod): activities\survey_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_adult_education_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_destiny_child_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_hostage_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\bp2\bp2_pet_rock_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ce1\ce1_funeral_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_court_language_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_inspiration_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_pay_homage_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep1\ep1_petition_liege_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep2\ep2_tournament_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep2\ep2_tour_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep2\ep2_wedding_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\camp_party_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\chariot_race_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\el_cid_story_cycle_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\governorship_confirmation_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\grand_ambitions_story_cycle_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\harrying_of_the_north_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\story_adventurer_ai_contract.txt
+Sin cambios de fecha (no copiado al mod): dlc\ep3\violet_poet_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\fp2\fp2_other_decision_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\mpo\mpo_on_actions_2.txt
+Sin cambios de fecha (no copiado al mod): dlc\mpo\mpo_season_events_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\mpo\mpo_the_great_steppe_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_china_minister_on_action.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_china_yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_japan_poetry_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_japan_yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_mandala_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_mandala_yearly_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_natural_disaster_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_pledge_loyalty_to_liege_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_silk_road_on_actions.txt
+Sin cambios de fecha (no copiado al mod): dlc\tgp\tgp_tribute_mission_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\diplomacy_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\general_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\intrigue_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\learning_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\martial_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\stewardship_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): lifestyles\wanderer_lifestyle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\bishop_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\jester_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\parent_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\relation_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\sibling_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\spouse_on_actions.txt
+Sin cambios de fecha (no copiado al mod): relations\vassal_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\abduct_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\befriend_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\claim_throne_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\coerce_and_leverage_contribution_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\coerce_tributary_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\court_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\disbelieve_mandala_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\elope_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\fabricate_hook_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\learn_language_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\murder_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\seduce_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\steal_back_artifact_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\steal_herd_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\study_confucian_classics_on_actions.txt
+Sin cambios de fecha (no copiado al mod): schemes\sway_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\ep3_story_cycle_admin_eunuch_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\mpo_story_cycle_temujin_flavor.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_cat_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_dog_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_doppelganger_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_eagle_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_foreign_raised_reformer_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_hostage_loyalty_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_house_feud_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_hunt_mystical_animal_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_imaginary_friend_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_murders_at_court_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_party_baron_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_peasant_affair_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_roman_restoration_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_statecraft_lifestyle_respected_liege_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_sycophant_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_tax_rivalry_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_turkic_tribe_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_unity_decisions_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_visited_by_ghosts_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_warhorse_on_actions.txt
+Sin cambios de fecha (no copiado al mod): story_cycles\story_cycle_witch_trial_on_actions.txt

@@ -22,6 +22,12 @@ class ModToolApp:
         self.app = app
         root.title("CK3 Mod Tool")
 
+        # 🔥 Maximizar ventana al iniciar
+        try:
+            root.state("zoomed")  # Windows / Linux
+        except:
+            root.attributes("-zoomed", True)  # fallback
+
         # ---------------------------------------------------------
         # Datos globales
         # ---------------------------------------------------------

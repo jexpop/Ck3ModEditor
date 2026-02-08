@@ -1,115 +1,230 @@
 
---- Procesado common/script_values --- 2026-02-08 01:18:46.586874
-Procesado: 00_activity_values.txt
-Procesado: 00_age_values.txt
-Procesado: 00_ai_values.txt
-Procesado: 00_artifact_values.txt
-Procesado: 00_basic_values.txt
-Procesado: 00_bastardy_values.txt
-Procesado: 00_building_values.txt
-Procesado: 00_character_legacy_values.txt
-Procesado: 00_character_values.txt
-Procesado: 00_combat_values.txt
-Procesado: 00_contract_script_values.txt
-Procesado: 00_council_values.txt
-Procesado: 00_county_control_values.txt
-Procesado: 00_county_fertility.txt
-Procesado: 00_court_amenities_values.txt
-Procesado: 00_court_grandeur_values.txt
-Procesado: 00_court_position_values.txt
-Procesado: 00_culture_values.txt
-Procesado: 00_decision_values.txt
-Procesado: 00_diarchy_values.txt
-Procesado: 00_difficulty_values.txt
-Procesado: 00_distance_values.txt
-Procesado: 00_dlc_fp3_script_values.txt
-Procesado: 00_dynasty_values.txt
-Procesado: 00_education_values.txt
-Procesado: 00_ep1_artifact_values.txt
-Procesado: 00_ep1_script_values.txt
-Procesado: 00_faction_values.txt
-Procesado: 00_game_rule_values.txt
-Procesado: 00_goverment_values.txt
-Procesado: 00_governance_lifestyle_values.txt
-Procesado: 00_hold_court_values.txt
-Procesado: 00_holy_order_values.txt
-Procesado: 00_interaction_values.txt
-Procesado: 00_intrigue_lifestyle_values.txt
-Procesado: 00_invasion_values.txt
-Procesado: 00_law_values.txt
-Procesado: 00_legitimacy_values.txt
-Procesado: 00_lifestyle_values.txt
-Procesado: 00_memory_values.txt
-Procesado: 00_men_at_arms_values.txt
-Procesado: 00_mongol_values.txt
-Procesado: 00_poetry_values.txt
-Procesado: 00_prison_values.txt
-Procesado: 00_regional_values.txt
-Procesado: 00_relation_values.txt
-Procesado: 00_scheme_values.txt
-Procesado: 00_scholarship_lifestyle_values.txt
-Procesado: 00_single_combat_values.txt
-Procesado: 00_stress_values.txt
-Procesado: 00_struggle_values.txt
-Procesado: 00_suggestion_values.txt
-Procesado: 00_title_tiers_values.txt
-Procesado: 00_trait_values.txt
-Procesado: 00_travel_values.txt
-Procesado: 00_unity_values.txt
-Procesado: 00_visit_settlement_values.txt
-Procesado: 00_war_values.txt
-Procesado: 01_character_weighting_values.txt
-Procesado: 01_dlc_bp1_script_values.txt
-Procesado: 01_dlc_bp2_script_values.txt
-Procesado: 01_dlc_fp1_script_values.txt
-Procesado: 01_dynamic_values.txt
-Procesado: 01_starting_values.txt
-Procesado: 02_dlc_ep1_script_values.txt
-Procesado: 02_religion_values.txt
-Procesado: 02_ruler_designer_values.txt
-Procesado: 02_vassal_values.txt
-Procesado: 03_dlc_fp2_script_values.txt
-Procesado: 04_ep2_accolade_values.txt
-Procesado: 04_ep2_hunt_values.txt
-Procesado: 04_ep2_tournament_values.txt
-Procesado: 04_ep2_tour_values.txt
-Procesado: 04_ep2_wedding_values.txt
-Procesado: 05_bp2_hostage_values.txt
-Procesado: 06_ce1_epidemics_values.txt
-Procesado: 06_ce1_legends_values.txt
-Procesado: 07_ep3_values.txt
-Procesado: 08_bp3_values.txt
-Procesado: 09_mpo_domicile_values.txt
-Procesado: 09_mpo_the_great_steppe_values.txt
-Procesado: 09_mpo_values.txt
-Procesado: 10_ach_values.txt
-Procesado: 10_dlc_tgp_china_values.txt
-Procesado: 10_health_values.txt
-Procesado: 10_tgp_dynastic_cycle_values.txt
-Procesado: 10_tgp_japan_values.txt
-Procesado: 50_major_decision_values.txt
-Procesado: 50_pilgrimage_values.txt
-Procesado: 50_province_values.txt
-Procesado: 50_tribal_values.txt
-Procesado: 99_casus_belli_values.txt
-Procesado: 99_chancellor_values.txt
-Procesado: 99_court_chaplain_values.txt
-Procesado: 99_debug_values.txt
-Procesado: 99_kurultai_values.txt
-Procesado: 99_marshal_values.txt
-Procesado: 99_spouse_councillor_values.txt
-Procesado: 99_spymaster_values.txt
-Procesado: 99_steward_values.txt
-Procesado: 99_vizier_councillor_values.txt
-Procesado: court_events_values.txt
-Procesado: destiny_score_interest_value.txt
-Procesado: tgp_debate_values.txt
-Procesado: tgp_festival_values.txt
-Procesado: tgp_great_project_values.txt
-Procesado: tgp_imperial_examination_values.txt
-Procesado: tgp_japan_values.txt
-Procesado: tgp_mandala_values.txt
-Procesado: tgp_natural_disaster_values.txt
-Procesado: tgp_tribute_mission_values.txt
-Procesado: tgp_values.txt
-Procesado: tutorial_values.txt
+--- Procesado common/script_values --- 2026-02-08 14:15:39.975163
+Sin cambios de fecha (no copiado al mod): 00_activity_values.txt
+Sin cambios de fecha (no copiado al mod): 00_age_values.txt
+Sin cambios de fecha (no copiado al mod): 00_ai_values.txt
+Sin cambios de fecha (no copiado al mod): 00_artifact_values.txt
+Sin cambios de fecha (no copiado al mod): 00_basic_values.txt
+Sin cambios de fecha (no copiado al mod): 00_bastardy_values.txt
+Procesado (cambia fecha): 00_building_values.txt
+Sin cambios de fecha (no copiado al mod): 00_character_legacy_values.txt
+Sin cambios de fecha (no copiado al mod): 00_character_values.txt
+Sin cambios de fecha (no copiado al mod): 00_combat_values.txt
+Sin cambios de fecha (no copiado al mod): 00_contract_script_values.txt
+Sin cambios de fecha (no copiado al mod): 00_council_values.txt
+Sin cambios de fecha (no copiado al mod): 00_county_control_values.txt
+Sin cambios de fecha (no copiado al mod): 00_county_fertility.txt
+Sin cambios de fecha (no copiado al mod): 00_court_amenities_values.txt
+Sin cambios de fecha (no copiado al mod): 00_court_grandeur_values.txt
+Sin cambios de fecha (no copiado al mod): 00_court_position_values.txt
+Sin cambios de fecha (no copiado al mod): 00_culture_values.txt
+Sin cambios de fecha (no copiado al mod): 00_decision_values.txt
+Sin cambios de fecha (no copiado al mod): 00_diarchy_values.txt
+Sin cambios de fecha (no copiado al mod): 00_difficulty_values.txt
+Sin cambios de fecha (no copiado al mod): 00_distance_values.txt
+Sin cambios de fecha (no copiado al mod): 00_dlc_fp3_script_values.txt
+Sin cambios de fecha (no copiado al mod): 00_dynasty_values.txt
+Sin cambios de fecha (no copiado al mod): 00_education_values.txt
+Procesado (cambia fecha): 00_ep1_artifact_values.txt
+Sin cambios de fecha (no copiado al mod): 00_ep1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 00_faction_values.txt
+Sin cambios de fecha (no copiado al mod): 00_game_rule_values.txt
+Sin cambios de fecha (no copiado al mod): 00_goverment_values.txt
+Sin cambios de fecha (no copiado al mod): 00_governance_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_hold_court_values.txt
+Sin cambios de fecha (no copiado al mod): 00_holy_order_values.txt
+Sin cambios de fecha (no copiado al mod): 00_interaction_values.txt
+Sin cambios de fecha (no copiado al mod): 00_intrigue_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_invasion_values.txt
+Sin cambios de fecha (no copiado al mod): 00_law_values.txt
+Sin cambios de fecha (no copiado al mod): 00_legitimacy_values.txt
+Sin cambios de fecha (no copiado al mod): 00_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_memory_values.txt
+Procesado (cambia fecha): 00_men_at_arms_values.txt
+Procesado (cambia fecha): 00_mongol_values.txt
+Sin cambios de fecha (no copiado al mod): 00_poetry_values.txt
+Sin cambios de fecha (no copiado al mod): 00_prison_values.txt
+Sin cambios de fecha (no copiado al mod): 00_regional_values.txt
+Sin cambios de fecha (no copiado al mod): 00_relation_values.txt
+Sin cambios de fecha (no copiado al mod): 00_scheme_values.txt
+Sin cambios de fecha (no copiado al mod): 00_scholarship_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_single_combat_values.txt
+Sin cambios de fecha (no copiado al mod): 00_stress_values.txt
+Sin cambios de fecha (no copiado al mod): 00_struggle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_suggestion_values.txt
+Sin cambios de fecha (no copiado al mod): 00_title_tiers_values.txt
+Sin cambios de fecha (no copiado al mod): 00_trait_values.txt
+Sin cambios de fecha (no copiado al mod): 00_travel_values.txt
+Sin cambios de fecha (no copiado al mod): 00_unity_values.txt
+Sin cambios de fecha (no copiado al mod): 00_visit_settlement_values.txt
+Sin cambios de fecha (no copiado al mod): 00_war_values.txt
+Sin cambios de fecha (no copiado al mod): 01_character_weighting_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dlc_bp1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dlc_bp2_script_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dlc_fp1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dynamic_values.txt
+Procesado (cambia fecha): 01_starting_values.txt
+Sin cambios de fecha (no copiado al mod): 02_dlc_ep1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 02_religion_values.txt
+Sin cambios de fecha (no copiado al mod): 02_ruler_designer_values.txt
+Sin cambios de fecha (no copiado al mod): 02_vassal_values.txt
+Sin cambios de fecha (no copiado al mod): 03_dlc_fp2_script_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_accolade_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_hunt_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_tournament_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_tour_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_wedding_values.txt
+Sin cambios de fecha (no copiado al mod): 05_bp2_hostage_values.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_epidemics_values.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_legends_values.txt
+Sin cambios de fecha (no copiado al mod): 07_ep3_values.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_values.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_domicile_values.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_the_great_steppe_values.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_values.txt
+Sin cambios de fecha (no copiado al mod): 10_ach_values.txt
+Sin cambios de fecha (no copiado al mod): 10_dlc_tgp_china_values.txt
+Sin cambios de fecha (no copiado al mod): 10_health_values.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_dynastic_cycle_values.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_japan_values.txt
+Sin cambios de fecha (no copiado al mod): 50_major_decision_values.txt
+Sin cambios de fecha (no copiado al mod): 50_pilgrimage_values.txt
+Sin cambios de fecha (no copiado al mod): 50_province_values.txt
+Sin cambios de fecha (no copiado al mod): 50_tribal_values.txt
+Sin cambios de fecha (no copiado al mod): 99_casus_belli_values.txt
+Sin cambios de fecha (no copiado al mod): 99_chancellor_values.txt
+Sin cambios de fecha (no copiado al mod): 99_court_chaplain_values.txt
+Sin cambios de fecha (no copiado al mod): 99_debug_values.txt
+Sin cambios de fecha (no copiado al mod): 99_kurultai_values.txt
+Sin cambios de fecha (no copiado al mod): 99_marshal_values.txt
+Sin cambios de fecha (no copiado al mod): 99_spouse_councillor_values.txt
+Sin cambios de fecha (no copiado al mod): 99_spymaster_values.txt
+Sin cambios de fecha (no copiado al mod): 99_steward_values.txt
+Sin cambios de fecha (no copiado al mod): 99_vizier_councillor_values.txt
+Sin cambios de fecha (no copiado al mod): court_events_values.txt
+Sin cambios de fecha (no copiado al mod): destiny_score_interest_value.txt
+Sin cambios de fecha (no copiado al mod): tgp_debate_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_festival_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_great_project_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_imperial_examination_values.txt
+Procesado (cambia fecha): tgp_japan_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_natural_disaster_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_tribute_mission_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_values.txt
+Sin cambios de fecha (no copiado al mod): tutorial_values.txt
+
+--- Procesado common/script_values --- 2026-02-08 14:22:11.943642
+Sin cambios de fecha (no copiado al mod): 00_activity_values.txt
+Sin cambios de fecha (no copiado al mod): 00_age_values.txt
+Sin cambios de fecha (no copiado al mod): 00_ai_values.txt
+Sin cambios de fecha (no copiado al mod): 00_artifact_values.txt
+Sin cambios de fecha (no copiado al mod): 00_basic_values.txt
+Sin cambios de fecha (no copiado al mod): 00_bastardy_values.txt
+Procesado (cambia fecha): 00_building_values.txt
+Sin cambios de fecha (no copiado al mod): 00_character_legacy_values.txt
+Sin cambios de fecha (no copiado al mod): 00_character_values.txt
+Sin cambios de fecha (no copiado al mod): 00_combat_values.txt
+Sin cambios de fecha (no copiado al mod): 00_contract_script_values.txt
+Sin cambios de fecha (no copiado al mod): 00_council_values.txt
+Sin cambios de fecha (no copiado al mod): 00_county_control_values.txt
+Sin cambios de fecha (no copiado al mod): 00_county_fertility.txt
+Sin cambios de fecha (no copiado al mod): 00_court_amenities_values.txt
+Sin cambios de fecha (no copiado al mod): 00_court_grandeur_values.txt
+Sin cambios de fecha (no copiado al mod): 00_court_position_values.txt
+Sin cambios de fecha (no copiado al mod): 00_culture_values.txt
+Sin cambios de fecha (no copiado al mod): 00_decision_values.txt
+Sin cambios de fecha (no copiado al mod): 00_diarchy_values.txt
+Sin cambios de fecha (no copiado al mod): 00_difficulty_values.txt
+Sin cambios de fecha (no copiado al mod): 00_distance_values.txt
+Sin cambios de fecha (no copiado al mod): 00_dlc_fp3_script_values.txt
+Sin cambios de fecha (no copiado al mod): 00_dynasty_values.txt
+Sin cambios de fecha (no copiado al mod): 00_education_values.txt
+Procesado (cambia fecha): 00_ep1_artifact_values.txt
+Sin cambios de fecha (no copiado al mod): 00_ep1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 00_faction_values.txt
+Sin cambios de fecha (no copiado al mod): 00_game_rule_values.txt
+Sin cambios de fecha (no copiado al mod): 00_goverment_values.txt
+Sin cambios de fecha (no copiado al mod): 00_governance_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_hold_court_values.txt
+Sin cambios de fecha (no copiado al mod): 00_holy_order_values.txt
+Sin cambios de fecha (no copiado al mod): 00_interaction_values.txt
+Sin cambios de fecha (no copiado al mod): 00_intrigue_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_invasion_values.txt
+Sin cambios de fecha (no copiado al mod): 00_law_values.txt
+Sin cambios de fecha (no copiado al mod): 00_legitimacy_values.txt
+Sin cambios de fecha (no copiado al mod): 00_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_memory_values.txt
+Procesado (cambia fecha): 00_men_at_arms_values.txt
+Procesado (cambia fecha): 00_mongol_values.txt
+Sin cambios de fecha (no copiado al mod): 00_poetry_values.txt
+Sin cambios de fecha (no copiado al mod): 00_prison_values.txt
+Sin cambios de fecha (no copiado al mod): 00_regional_values.txt
+Sin cambios de fecha (no copiado al mod): 00_relation_values.txt
+Sin cambios de fecha (no copiado al mod): 00_scheme_values.txt
+Sin cambios de fecha (no copiado al mod): 00_scholarship_lifestyle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_single_combat_values.txt
+Sin cambios de fecha (no copiado al mod): 00_stress_values.txt
+Sin cambios de fecha (no copiado al mod): 00_struggle_values.txt
+Sin cambios de fecha (no copiado al mod): 00_suggestion_values.txt
+Sin cambios de fecha (no copiado al mod): 00_title_tiers_values.txt
+Sin cambios de fecha (no copiado al mod): 00_trait_values.txt
+Sin cambios de fecha (no copiado al mod): 00_travel_values.txt
+Sin cambios de fecha (no copiado al mod): 00_unity_values.txt
+Sin cambios de fecha (no copiado al mod): 00_visit_settlement_values.txt
+Sin cambios de fecha (no copiado al mod): 00_war_values.txt
+Sin cambios de fecha (no copiado al mod): 01_character_weighting_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dlc_bp1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dlc_bp2_script_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dlc_fp1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 01_dynamic_values.txt
+Procesado (cambia fecha): 01_starting_values.txt
+Sin cambios de fecha (no copiado al mod): 02_dlc_ep1_script_values.txt
+Sin cambios de fecha (no copiado al mod): 02_religion_values.txt
+Sin cambios de fecha (no copiado al mod): 02_ruler_designer_values.txt
+Sin cambios de fecha (no copiado al mod): 02_vassal_values.txt
+Sin cambios de fecha (no copiado al mod): 03_dlc_fp2_script_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_accolade_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_hunt_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_tournament_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_tour_values.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_wedding_values.txt
+Sin cambios de fecha (no copiado al mod): 05_bp2_hostage_values.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_epidemics_values.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_legends_values.txt
+Sin cambios de fecha (no copiado al mod): 07_ep3_values.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_values.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_domicile_values.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_the_great_steppe_values.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_values.txt
+Sin cambios de fecha (no copiado al mod): 10_ach_values.txt
+Sin cambios de fecha (no copiado al mod): 10_dlc_tgp_china_values.txt
+Sin cambios de fecha (no copiado al mod): 10_health_values.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_dynastic_cycle_values.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_japan_values.txt
+Sin cambios de fecha (no copiado al mod): 50_major_decision_values.txt
+Sin cambios de fecha (no copiado al mod): 50_pilgrimage_values.txt
+Sin cambios de fecha (no copiado al mod): 50_province_values.txt
+Sin cambios de fecha (no copiado al mod): 50_tribal_values.txt
+Sin cambios de fecha (no copiado al mod): 99_casus_belli_values.txt
+Sin cambios de fecha (no copiado al mod): 99_chancellor_values.txt
+Sin cambios de fecha (no copiado al mod): 99_court_chaplain_values.txt
+Sin cambios de fecha (no copiado al mod): 99_debug_values.txt
+Sin cambios de fecha (no copiado al mod): 99_kurultai_values.txt
+Sin cambios de fecha (no copiado al mod): 99_marshal_values.txt
+Sin cambios de fecha (no copiado al mod): 99_spouse_councillor_values.txt
+Sin cambios de fecha (no copiado al mod): 99_spymaster_values.txt
+Sin cambios de fecha (no copiado al mod): 99_steward_values.txt
+Sin cambios de fecha (no copiado al mod): 99_vizier_councillor_values.txt
+Sin cambios de fecha (no copiado al mod): court_events_values.txt
+Sin cambios de fecha (no copiado al mod): destiny_score_interest_value.txt
+Sin cambios de fecha (no copiado al mod): tgp_debate_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_festival_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_great_project_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_imperial_examination_values.txt
+Procesado (cambia fecha): tgp_japan_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_natural_disaster_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_tribute_mission_values.txt
+Sin cambios de fecha (no copiado al mod): tgp_values.txt
+Sin cambios de fecha (no copiado al mod): tutorial_values.txt

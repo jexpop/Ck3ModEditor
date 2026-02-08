@@ -1,135 +1,270 @@
 
---- Procesado history/cultures --- 2026-02-08 01:18:53.617523
-Procesado: afghan.txt
-Procesado: alan.txt
-Procesado: albanian.txt
-Procesado: andalusian.txt
-Procesado: anglo_saxon.txt
-Procesado: armenian.txt
-Procesado: assamese.txt
-Procesado: assyrian.txt
-Procesado: avar.txt
-Procesado: baranis.txt
-Procesado: basque.txt
-Procesado: bavarian.txt
-Procesado: beja.txt
-Procesado: bengali.txt
-Procesado: bolghar.txt
-Procesado: bosnian.txt
-Procesado: bozo.txt
-Procesado: brahui.txt
-Procesado: breton.txt
-Procesado: bulgarian.txt
-Procesado: buryat.txt
-Procesado: carantanian.txt
-Procesado: cham.txt
-Procesado: czech.txt
-Procesado: daju.txt
-Procesado: daylamite.txt
-Procesado: dutch.txt
-Procesado: egyptian.txt
-Procesado: estonian.txt
-Procesado: ethiopian.txt
-Procesado: gaw.txt
-Procesado: georgian.txt
-Procesado: greek.txt
-Procesado: guanches.txt
-Procesado: han.txt
-Procesado: hausa.txt
-Procesado: heritage_ainuic.txt
-Procesado: heritage_akan.txt
-Procesado: heritage_arabic.txt
-Procesado: heritage_austronesian.txt
-Procesado: heritage_baltic.txt
-Procesado: heritage_balto_finnic.txt
-Procesado: heritage_bantu.txt
-Procesado: heritage_berber.txt
-Procesado: heritage_brythonic.txt
-Procesado: heritage_burman.txt
-Procesado: heritage_buyeo.txt
-Procesado: heritage_central_african.txt
-Procesado: heritage_central_germanic.txt
-Procesado: heritage_chinese.txt
-Procesado: heritage_dravidian.txt
-Procesado: heritage_east_african.txt
-Procesado: heritage_east_slavic.txt
-Procesado: heritage_frankish.txt
-Procesado: heritage_goidelic.txt
-Procesado: heritage_hmongic.txt
-Procesado: heritage_iberian.txt
-Procesado: heritage_indo_aryan.txt
-Procesado: heritage_iranian.txt
-Procesado: heritage_israelite.txt
-Procesado: heritage_korean.txt
-Procesado: heritage_latin.txt
-Procesado: heritage_mongolic.txt
-Procesado: heritage_mon_khmer.txt
-Procesado: heritage_north_germanic.txt
-Procesado: heritage_qiangic.txt
-Procesado: heritage_sahelian.txt
-Procesado: heritage_senegambian.txt
-Procesado: heritage_somalian.txt
-Procesado: heritage_south_slavic.txt
-Procesado: heritage_tai.txt
-Procesado: heritage_tibetan.txt
-Procesado: heritage_tocharian.txt
-Procesado: heritage_tungusic.txt
-Procesado: heritage_turkic.txt
-Procesado: heritage_ugro_permian.txt
-Procesado: heritage_volga_finnic.txt
-Procesado: heritage_west_african.txt
-Procesado: heritage_west_germanic.txt
-Procesado: heritage_yoruba.txt
-Procesado: hungarian.txt
-Procesado: italian.txt
-Procesado: japanese.txt
-Procesado: kanuri.txt
-Procesado: kashmiri.txt
-Procesado: khazar.txt
-Procesado: khwarezmian.txt
-Procesado: kirati.txt
-Procesado: kochinim.txt
-Procesado: levantine.txt
-Procesado: maghrebi.txt
-Procesado: malay.txt
-Procesado: marka.txt
-Procesado: mogyer.txt
-Procesado: nepali.txt
-Procesado: nivkh.txt
-Procesado: norman.txt
-Procesado: norse.txt
-Procesado: nubian.txt
-Procesado: oirat.txt
-Procesado: oriya.txt
-Procesado: pictish.txt
-Procesado: polabian.txt
-Procesado: polish.txt
-Procesado: pommeranian.txt
-Procesado: prussian.txt
-Procesado: pulaar.txt
-Procesado: punjabi.txt
-Procesado: radhanite.txt
-Procesado: ryukyuan.txt
-Procesado: sami.txt
-Procesado: samoyed.txt
-Procesado: sao.txt
-Procesado: sardinian.txt
-Procesado: saxon.txt
-Procesado: scottish.txt
-Procesado: sicilian.txt
-Procesado: sindhi.txt
-Procesado: sinhala.txt
-Procesado: slovien.txt
-Procesado: sogdian.txt
-Procesado: sorko.txt
-Procesado: swahili.txt
-Procesado: tangut.txt
-Procesado: turkish.txt
-Procesado: turkmen.txt
-Procesado: uyghur.txt
-Procesado: vepsian.txt
-Procesado: viet.txt
-Procesado: vlach.txt
-Procesado: yemeni.txt
-Procesado: yoruba.txt
-Procesado: zaghawa.txt
+--- Procesado history/cultures --- 2026-02-08 14:15:56.788593
+Procesado (cambia fecha): afghan.txt
+Procesado (cambia fecha): alan.txt
+Procesado (cambia fecha): albanian.txt
+Procesado (cambia fecha): andalusian.txt
+Procesado (cambia fecha): anglo_saxon.txt
+Procesado (cambia fecha): armenian.txt
+Procesado (cambia fecha): assamese.txt
+Procesado (cambia fecha): assyrian.txt
+Procesado (cambia fecha): avar.txt
+Procesado (cambia fecha): baranis.txt
+Procesado (cambia fecha): basque.txt
+Procesado (cambia fecha): bavarian.txt
+Procesado (cambia fecha): beja.txt
+Procesado (cambia fecha): bengali.txt
+Procesado (cambia fecha): bolghar.txt
+Procesado (cambia fecha): bosnian.txt
+Procesado (cambia fecha): bozo.txt
+Procesado (cambia fecha): brahui.txt
+Procesado (cambia fecha): breton.txt
+Procesado (cambia fecha): bulgarian.txt
+Procesado (cambia fecha): buryat.txt
+Procesado (cambia fecha): carantanian.txt
+Procesado (cambia fecha): cham.txt
+Procesado (cambia fecha): czech.txt
+Procesado (cambia fecha): daju.txt
+Procesado (cambia fecha): daylamite.txt
+Procesado (cambia fecha): dutch.txt
+Procesado (cambia fecha): egyptian.txt
+Procesado (cambia fecha): estonian.txt
+Procesado (cambia fecha): ethiopian.txt
+Procesado (cambia fecha): gaw.txt
+Procesado (cambia fecha): georgian.txt
+Procesado (cambia fecha): greek.txt
+Procesado (cambia fecha): guanches.txt
+Procesado (cambia fecha): han.txt
+Procesado (cambia fecha): hausa.txt
+Procesado (cambia fecha): heritage_ainuic.txt
+Procesado (cambia fecha): heritage_akan.txt
+Procesado (cambia fecha): heritage_arabic.txt
+Procesado (cambia fecha): heritage_austronesian.txt
+Procesado (cambia fecha): heritage_baltic.txt
+Procesado (cambia fecha): heritage_balto_finnic.txt
+Procesado (cambia fecha): heritage_bantu.txt
+Procesado (cambia fecha): heritage_berber.txt
+Procesado (cambia fecha): heritage_brythonic.txt
+Procesado (cambia fecha): heritage_burman.txt
+Procesado (cambia fecha): heritage_buyeo.txt
+Procesado (cambia fecha): heritage_central_african.txt
+Procesado (cambia fecha): heritage_central_germanic.txt
+Procesado (cambia fecha): heritage_chinese.txt
+Procesado (cambia fecha): heritage_dravidian.txt
+Procesado (cambia fecha): heritage_east_african.txt
+Procesado (cambia fecha): heritage_east_slavic.txt
+Procesado (cambia fecha): heritage_frankish.txt
+Procesado (cambia fecha): heritage_goidelic.txt
+Procesado (cambia fecha): heritage_hmongic.txt
+Procesado (cambia fecha): heritage_iberian.txt
+Procesado (cambia fecha): heritage_indo_aryan.txt
+Procesado (cambia fecha): heritage_iranian.txt
+Procesado (cambia fecha): heritage_israelite.txt
+Procesado (cambia fecha): heritage_korean.txt
+Procesado (cambia fecha): heritage_latin.txt
+Procesado (cambia fecha): heritage_mongolic.txt
+Procesado (cambia fecha): heritage_mon_khmer.txt
+Procesado (cambia fecha): heritage_north_germanic.txt
+Procesado (cambia fecha): heritage_qiangic.txt
+Procesado (cambia fecha): heritage_sahelian.txt
+Procesado (cambia fecha): heritage_senegambian.txt
+Procesado (cambia fecha): heritage_somalian.txt
+Procesado (cambia fecha): heritage_south_slavic.txt
+Procesado (cambia fecha): heritage_tai.txt
+Procesado (cambia fecha): heritage_tibetan.txt
+Procesado (cambia fecha): heritage_tocharian.txt
+Procesado (cambia fecha): heritage_tungusic.txt
+Procesado (cambia fecha): heritage_turkic.txt
+Procesado (cambia fecha): heritage_ugro_permian.txt
+Procesado (cambia fecha): heritage_volga_finnic.txt
+Procesado (cambia fecha): heritage_west_african.txt
+Procesado (cambia fecha): heritage_west_germanic.txt
+Procesado (cambia fecha): heritage_yoruba.txt
+Procesado (cambia fecha): hungarian.txt
+Procesado (cambia fecha): italian.txt
+Procesado (cambia fecha): japanese.txt
+Procesado (cambia fecha): kanuri.txt
+Procesado (cambia fecha): kashmiri.txt
+Procesado (cambia fecha): khazar.txt
+Procesado (cambia fecha): khwarezmian.txt
+Procesado (cambia fecha): kirati.txt
+Procesado (cambia fecha): kochinim.txt
+Procesado (cambia fecha): levantine.txt
+Procesado (cambia fecha): maghrebi.txt
+Procesado (cambia fecha): malay.txt
+Procesado (cambia fecha): marka.txt
+Procesado (cambia fecha): mogyer.txt
+Procesado (cambia fecha): nepali.txt
+Procesado (cambia fecha): nivkh.txt
+Procesado (cambia fecha): norman.txt
+Procesado (cambia fecha): norse.txt
+Procesado (cambia fecha): nubian.txt
+Procesado (cambia fecha): oirat.txt
+Procesado (cambia fecha): oriya.txt
+Procesado (cambia fecha): pictish.txt
+Procesado (cambia fecha): polabian.txt
+Procesado (cambia fecha): polish.txt
+Procesado (cambia fecha): pommeranian.txt
+Procesado (cambia fecha): prussian.txt
+Procesado (cambia fecha): pulaar.txt
+Procesado (cambia fecha): punjabi.txt
+Procesado (cambia fecha): radhanite.txt
+Procesado (cambia fecha): ryukyuan.txt
+Procesado (cambia fecha): sami.txt
+Procesado (cambia fecha): samoyed.txt
+Procesado (cambia fecha): sao.txt
+Procesado (cambia fecha): sardinian.txt
+Procesado (cambia fecha): saxon.txt
+Procesado (cambia fecha): scottish.txt
+Procesado (cambia fecha): sicilian.txt
+Procesado (cambia fecha): sindhi.txt
+Procesado (cambia fecha): sinhala.txt
+Procesado (cambia fecha): slovien.txt
+Procesado (cambia fecha): sogdian.txt
+Procesado (cambia fecha): sorko.txt
+Procesado (cambia fecha): swahili.txt
+Procesado (cambia fecha): tangut.txt
+Procesado (cambia fecha): turkish.txt
+Procesado (cambia fecha): turkmen.txt
+Procesado (cambia fecha): uyghur.txt
+Procesado (cambia fecha): vepsian.txt
+Procesado (cambia fecha): viet.txt
+Procesado (cambia fecha): vlach.txt
+Procesado (cambia fecha): yemeni.txt
+Procesado (cambia fecha): yoruba.txt
+Procesado (cambia fecha): zaghawa.txt
+
+--- Procesado history/cultures --- 2026-02-08 14:22:16.118861
+Procesado (cambia fecha): afghan.txt
+Procesado (cambia fecha): alan.txt
+Procesado (cambia fecha): albanian.txt
+Procesado (cambia fecha): andalusian.txt
+Procesado (cambia fecha): anglo_saxon.txt
+Procesado (cambia fecha): armenian.txt
+Procesado (cambia fecha): assamese.txt
+Procesado (cambia fecha): assyrian.txt
+Procesado (cambia fecha): avar.txt
+Procesado (cambia fecha): baranis.txt
+Procesado (cambia fecha): basque.txt
+Procesado (cambia fecha): bavarian.txt
+Procesado (cambia fecha): beja.txt
+Procesado (cambia fecha): bengali.txt
+Procesado (cambia fecha): bolghar.txt
+Procesado (cambia fecha): bosnian.txt
+Procesado (cambia fecha): bozo.txt
+Procesado (cambia fecha): brahui.txt
+Procesado (cambia fecha): breton.txt
+Procesado (cambia fecha): bulgarian.txt
+Procesado (cambia fecha): buryat.txt
+Procesado (cambia fecha): carantanian.txt
+Procesado (cambia fecha): cham.txt
+Procesado (cambia fecha): czech.txt
+Procesado (cambia fecha): daju.txt
+Procesado (cambia fecha): daylamite.txt
+Procesado (cambia fecha): dutch.txt
+Procesado (cambia fecha): egyptian.txt
+Procesado (cambia fecha): estonian.txt
+Procesado (cambia fecha): ethiopian.txt
+Procesado (cambia fecha): gaw.txt
+Procesado (cambia fecha): georgian.txt
+Procesado (cambia fecha): greek.txt
+Procesado (cambia fecha): guanches.txt
+Procesado (cambia fecha): han.txt
+Procesado (cambia fecha): hausa.txt
+Procesado (cambia fecha): heritage_ainuic.txt
+Procesado (cambia fecha): heritage_akan.txt
+Procesado (cambia fecha): heritage_arabic.txt
+Procesado (cambia fecha): heritage_austronesian.txt
+Procesado (cambia fecha): heritage_baltic.txt
+Procesado (cambia fecha): heritage_balto_finnic.txt
+Procesado (cambia fecha): heritage_bantu.txt
+Procesado (cambia fecha): heritage_berber.txt
+Procesado (cambia fecha): heritage_brythonic.txt
+Procesado (cambia fecha): heritage_burman.txt
+Procesado (cambia fecha): heritage_buyeo.txt
+Procesado (cambia fecha): heritage_central_african.txt
+Procesado (cambia fecha): heritage_central_germanic.txt
+Procesado (cambia fecha): heritage_chinese.txt
+Procesado (cambia fecha): heritage_dravidian.txt
+Procesado (cambia fecha): heritage_east_african.txt
+Procesado (cambia fecha): heritage_east_slavic.txt
+Procesado (cambia fecha): heritage_frankish.txt
+Procesado (cambia fecha): heritage_goidelic.txt
+Procesado (cambia fecha): heritage_hmongic.txt
+Procesado (cambia fecha): heritage_iberian.txt
+Procesado (cambia fecha): heritage_indo_aryan.txt
+Procesado (cambia fecha): heritage_iranian.txt
+Procesado (cambia fecha): heritage_israelite.txt
+Procesado (cambia fecha): heritage_korean.txt
+Procesado (cambia fecha): heritage_latin.txt
+Procesado (cambia fecha): heritage_mongolic.txt
+Procesado (cambia fecha): heritage_mon_khmer.txt
+Procesado (cambia fecha): heritage_north_germanic.txt
+Procesado (cambia fecha): heritage_qiangic.txt
+Procesado (cambia fecha): heritage_sahelian.txt
+Procesado (cambia fecha): heritage_senegambian.txt
+Procesado (cambia fecha): heritage_somalian.txt
+Procesado (cambia fecha): heritage_south_slavic.txt
+Procesado (cambia fecha): heritage_tai.txt
+Procesado (cambia fecha): heritage_tibetan.txt
+Procesado (cambia fecha): heritage_tocharian.txt
+Procesado (cambia fecha): heritage_tungusic.txt
+Procesado (cambia fecha): heritage_turkic.txt
+Procesado (cambia fecha): heritage_ugro_permian.txt
+Procesado (cambia fecha): heritage_volga_finnic.txt
+Procesado (cambia fecha): heritage_west_african.txt
+Procesado (cambia fecha): heritage_west_germanic.txt
+Procesado (cambia fecha): heritage_yoruba.txt
+Procesado (cambia fecha): hungarian.txt
+Procesado (cambia fecha): italian.txt
+Procesado (cambia fecha): japanese.txt
+Procesado (cambia fecha): kanuri.txt
+Procesado (cambia fecha): kashmiri.txt
+Procesado (cambia fecha): khazar.txt
+Procesado (cambia fecha): khwarezmian.txt
+Procesado (cambia fecha): kirati.txt
+Procesado (cambia fecha): kochinim.txt
+Procesado (cambia fecha): levantine.txt
+Procesado (cambia fecha): maghrebi.txt
+Procesado (cambia fecha): malay.txt
+Procesado (cambia fecha): marka.txt
+Procesado (cambia fecha): mogyer.txt
+Procesado (cambia fecha): nepali.txt
+Procesado (cambia fecha): nivkh.txt
+Procesado (cambia fecha): norman.txt
+Procesado (cambia fecha): norse.txt
+Procesado (cambia fecha): nubian.txt
+Procesado (cambia fecha): oirat.txt
+Procesado (cambia fecha): oriya.txt
+Procesado (cambia fecha): pictish.txt
+Procesado (cambia fecha): polabian.txt
+Procesado (cambia fecha): polish.txt
+Procesado (cambia fecha): pommeranian.txt
+Procesado (cambia fecha): prussian.txt
+Procesado (cambia fecha): pulaar.txt
+Procesado (cambia fecha): punjabi.txt
+Procesado (cambia fecha): radhanite.txt
+Procesado (cambia fecha): ryukyuan.txt
+Procesado (cambia fecha): sami.txt
+Procesado (cambia fecha): samoyed.txt
+Procesado (cambia fecha): sao.txt
+Procesado (cambia fecha): sardinian.txt
+Procesado (cambia fecha): saxon.txt
+Procesado (cambia fecha): scottish.txt
+Procesado (cambia fecha): sicilian.txt
+Procesado (cambia fecha): sindhi.txt
+Procesado (cambia fecha): sinhala.txt
+Procesado (cambia fecha): slovien.txt
+Procesado (cambia fecha): sogdian.txt
+Procesado (cambia fecha): sorko.txt
+Procesado (cambia fecha): swahili.txt
+Procesado (cambia fecha): tangut.txt
+Procesado (cambia fecha): turkish.txt
+Procesado (cambia fecha): turkmen.txt
+Procesado (cambia fecha): uyghur.txt
+Procesado (cambia fecha): vepsian.txt
+Procesado (cambia fecha): viet.txt
+Procesado (cambia fecha): vlach.txt
+Procesado (cambia fecha): yemeni.txt
+Procesado (cambia fecha): yoruba.txt
+Procesado (cambia fecha): zaghawa.txt

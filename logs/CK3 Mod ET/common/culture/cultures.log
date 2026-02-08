@@ -1,57 +1,114 @@
 
---- Procesado common/culture/cultures --- 2026-02-08 01:18:45.683816
-Procesado: 00_akan.txt
-Procesado: 00_amuric.txt
-Procesado: 00_arabic.txt
-Procesado: 00_baltic.txt
-Procesado: 00_balto_finnic.txt
-Procesado: 00_bantu.txt
-Procesado: 00_berber.txt
-Procesado: 00_brythonic.txt
-Procesado: 00_burman.txt
-Procesado: 00_byzantine.txt
-Procesado: 00_caucasian.txt
-Procesado: 00_central_african.txt
-Procesado: 00_central_germanic.txt
-Procesado: 00_cham.txt
-Procesado: 00_chinese.txt
-Procesado: 00_dead.txt
-Procesado: 00_dravidian.txt
-Procesado: 00_east_african.txt
-Procesado: 00_east_slavic.txt
-Procesado: 00_frankish.txt
-Procesado: 00_goidelic.txt
-Procesado: 00_hmongic.txt
-Procesado: 00_iberian.txt
-Procesado: 00_indo_aryan.txt
-Procesado: 00_iranian.txt
-Procesado: 00_israelite.txt
-Procesado: 00_japonic.txt
-Procesado: 00_khmer.txt
-Procesado: 00_korean.txt
-Procesado: 00_latin.txt
-Procesado: 00_magyar.txt
-Procesado: 00_malayic.txt
-Procesado: 00_mongolic.txt
-Procesado: 00_nakkavaram.txt
-Procesado: 00_north_germanic.txt
-Procesado: 00_qiangic.txt
-Procesado: 00_sahelian.txt
-Procesado: 00_sahelian_ibl.txt
-Procesado: 00_senegambian.txt
-Procesado: 00_somalian.txt
-Procesado: 00_south_slavic.txt
-Procesado: 00_syriac.txt
-Procesado: 00_tai.txt
-Procesado: 00_tibetan.txt
-Procesado: 00_tujia.txt
-Procesado: 00_tungusic.txt
-Procesado: 00_turkic.txt
-Procesado: 00_ugro_permian.txt
-Procesado: 00_viet.txt
-Procesado: 00_vlach.txt
-Procesado: 00_volga_finnic.txt
-Procesado: 00_west_african.txt
-Procesado: 00_west_germanic.txt
-Procesado: 00_west_slavic.txt
-Procesado: 00_yoruba.txt
+--- Procesado common/culture/cultures --- 2026-02-08 14:15:34.700602
+Sin cambios de fecha (no copiado al mod): 00_akan.txt
+Sin cambios de fecha (no copiado al mod): 00_amuric.txt
+Procesado (cambia fecha): 00_arabic.txt
+Sin cambios de fecha (no copiado al mod): 00_baltic.txt
+Sin cambios de fecha (no copiado al mod): 00_balto_finnic.txt
+Sin cambios de fecha (no copiado al mod): 00_bantu.txt
+Sin cambios de fecha (no copiado al mod): 00_berber.txt
+Sin cambios de fecha (no copiado al mod): 00_brythonic.txt
+Sin cambios de fecha (no copiado al mod): 00_burman.txt
+Sin cambios de fecha (no copiado al mod): 00_byzantine.txt
+Sin cambios de fecha (no copiado al mod): 00_caucasian.txt
+Procesado (cambia fecha): 00_central_african.txt
+Procesado (cambia fecha): 00_central_germanic.txt
+Sin cambios de fecha (no copiado al mod): 00_cham.txt
+Sin cambios de fecha (no copiado al mod): 00_chinese.txt
+Sin cambios de fecha (no copiado al mod): 00_dead.txt
+Sin cambios de fecha (no copiado al mod): 00_dravidian.txt
+Sin cambios de fecha (no copiado al mod): 00_east_african.txt
+Sin cambios de fecha (no copiado al mod): 00_east_slavic.txt
+Procesado (cambia fecha): 00_frankish.txt
+Procesado (cambia fecha): 00_goidelic.txt
+Sin cambios de fecha (no copiado al mod): 00_hmongic.txt
+Procesado (cambia fecha): 00_iberian.txt
+Sin cambios de fecha (no copiado al mod): 00_indo_aryan.txt
+Procesado (cambia fecha): 00_iranian.txt
+Sin cambios de fecha (no copiado al mod): 00_israelite.txt
+Sin cambios de fecha (no copiado al mod): 00_japonic.txt
+Sin cambios de fecha (no copiado al mod): 00_khmer.txt
+Procesado (cambia fecha): 00_korean.txt
+Procesado (cambia fecha): 00_latin.txt
+Procesado (cambia fecha): 00_magyar.txt
+Sin cambios de fecha (no copiado al mod): 00_malayic.txt
+Sin cambios de fecha (no copiado al mod): 00_mongolic.txt
+Sin cambios de fecha (no copiado al mod): 00_nakkavaram.txt
+Procesado (cambia fecha): 00_north_germanic.txt
+Sin cambios de fecha (no copiado al mod): 00_qiangic.txt
+Sin cambios de fecha (no copiado al mod): 00_sahelian.txt
+Sin cambios de fecha (no copiado al mod): 00_sahelian_ibl.txt
+Sin cambios de fecha (no copiado al mod): 00_senegambian.txt
+Sin cambios de fecha (no copiado al mod): 00_somalian.txt
+Procesado (cambia fecha): 00_south_slavic.txt
+Sin cambios de fecha (no copiado al mod): 00_syriac.txt
+Sin cambios de fecha (no copiado al mod): 00_tai.txt
+Sin cambios de fecha (no copiado al mod): 00_tibetan.txt
+Sin cambios de fecha (no copiado al mod): 00_tujia.txt
+Procesado (cambia fecha): 00_tungusic.txt
+Procesado (cambia fecha): 00_turkic.txt
+Sin cambios de fecha (no copiado al mod): 00_ugro_permian.txt
+Sin cambios de fecha (no copiado al mod): 00_viet.txt
+Procesado (cambia fecha): 00_vlach.txt
+Sin cambios de fecha (no copiado al mod): 00_volga_finnic.txt
+Sin cambios de fecha (no copiado al mod): 00_west_african.txt
+Procesado (cambia fecha): 00_west_germanic.txt
+Sin cambios de fecha (no copiado al mod): 00_west_slavic.txt
+Sin cambios de fecha (no copiado al mod): 00_yoruba.txt
+
+--- Procesado common/culture/cultures --- 2026-02-08 14:22:11.095333
+Sin cambios de fecha (no copiado al mod): 00_akan.txt
+Sin cambios de fecha (no copiado al mod): 00_amuric.txt
+Procesado (cambia fecha): 00_arabic.txt
+Sin cambios de fecha (no copiado al mod): 00_baltic.txt
+Sin cambios de fecha (no copiado al mod): 00_balto_finnic.txt
+Sin cambios de fecha (no copiado al mod): 00_bantu.txt
+Sin cambios de fecha (no copiado al mod): 00_berber.txt
+Sin cambios de fecha (no copiado al mod): 00_brythonic.txt
+Sin cambios de fecha (no copiado al mod): 00_burman.txt
+Sin cambios de fecha (no copiado al mod): 00_byzantine.txt
+Sin cambios de fecha (no copiado al mod): 00_caucasian.txt
+Procesado (cambia fecha): 00_central_african.txt
+Procesado (cambia fecha): 00_central_germanic.txt
+Sin cambios de fecha (no copiado al mod): 00_cham.txt
+Sin cambios de fecha (no copiado al mod): 00_chinese.txt
+Sin cambios de fecha (no copiado al mod): 00_dead.txt
+Sin cambios de fecha (no copiado al mod): 00_dravidian.txt
+Sin cambios de fecha (no copiado al mod): 00_east_african.txt
+Sin cambios de fecha (no copiado al mod): 00_east_slavic.txt
+Procesado (cambia fecha): 00_frankish.txt
+Procesado (cambia fecha): 00_goidelic.txt
+Sin cambios de fecha (no copiado al mod): 00_hmongic.txt
+Procesado (cambia fecha): 00_iberian.txt
+Sin cambios de fecha (no copiado al mod): 00_indo_aryan.txt
+Procesado (cambia fecha): 00_iranian.txt
+Sin cambios de fecha (no copiado al mod): 00_israelite.txt
+Sin cambios de fecha (no copiado al mod): 00_japonic.txt
+Sin cambios de fecha (no copiado al mod): 00_khmer.txt
+Procesado (cambia fecha): 00_korean.txt
+Procesado (cambia fecha): 00_latin.txt
+Procesado (cambia fecha): 00_magyar.txt
+Sin cambios de fecha (no copiado al mod): 00_malayic.txt
+Sin cambios de fecha (no copiado al mod): 00_mongolic.txt
+Sin cambios de fecha (no copiado al mod): 00_nakkavaram.txt
+Procesado (cambia fecha): 00_north_germanic.txt
+Sin cambios de fecha (no copiado al mod): 00_qiangic.txt
+Sin cambios de fecha (no copiado al mod): 00_sahelian.txt
+Sin cambios de fecha (no copiado al mod): 00_sahelian_ibl.txt
+Sin cambios de fecha (no copiado al mod): 00_senegambian.txt
+Sin cambios de fecha (no copiado al mod): 00_somalian.txt
+Procesado (cambia fecha): 00_south_slavic.txt
+Sin cambios de fecha (no copiado al mod): 00_syriac.txt
+Sin cambios de fecha (no copiado al mod): 00_tai.txt
+Sin cambios de fecha (no copiado al mod): 00_tibetan.txt
+Sin cambios de fecha (no copiado al mod): 00_tujia.txt
+Procesado (cambia fecha): 00_tungusic.txt
+Procesado (cambia fecha): 00_turkic.txt
+Sin cambios de fecha (no copiado al mod): 00_ugro_permian.txt
+Sin cambios de fecha (no copiado al mod): 00_viet.txt
+Procesado (cambia fecha): 00_vlach.txt
+Sin cambios de fecha (no copiado al mod): 00_volga_finnic.txt
+Sin cambios de fecha (no copiado al mod): 00_west_african.txt
+Procesado (cambia fecha): 00_west_germanic.txt
+Sin cambios de fecha (no copiado al mod): 00_west_slavic.txt
+Sin cambios de fecha (no copiado al mod): 00_yoruba.txt

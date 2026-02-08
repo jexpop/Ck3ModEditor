@@ -1,180 +1,360 @@
 
---- Procesado history/provinces --- 2026-02-08 01:18:54.442982
-Procesado: e_china.txt
-Procesado: e_dali.txt
-Procesado: e_japan.txt
-Procesado: e_kambuja.txt
-Procesado: e_viet.txt
-Procesado: k_abyssinia.txt
-Procesado: k_adal.txt
-Procesado: k_africa.txt
-Procesado: k_ajuraan.txt
-Procesado: k_akan.txt
-Procesado: k_amdo.txt
-Procesado: k_amur.txt
-Procesado: k_anatolia.txt
-Procesado: k_anbiya.txt
-Procesado: k_andalusia.txt
-Procesado: k_andhra.txt
-Procesado: k_angara.txt
-Procesado: k_aquitaine.txt
-Procesado: k_arabia.txt
-Procesado: k_aragon.txt
-Procesado: k_armenia.txt
-Procesado: k_badajoz.txt
-Procesado: k_bale.txt
-Procesado: k_balhae.txt
-Procesado: k_bashkiria.txt
-Procesado: k_bavaria.txt
-Procesado: k_bengal.txt
-Procesado: k_bihar.txt
-Procesado: k_bjarmaland.txt
-Procesado: k_blemmyia.txt
-Procesado: k_bohemia.txt
-Procesado: k_borgu.txt
-Procesado: k_borneo.txt
-Procesado: k_brittany.txt
-Procesado: k_bulgaria.txt
-Procesado: k_burgundy.txt
-Procesado: k_buryatia.txt
-Procesado: k_caspian_steppe.txt
-Procesado: k_castille.txt
-Procesado: k_caucasus.txt
-Procesado: k_croatia.txt
-Procesado: k_cuman.txt
-Procesado: k_cyprus.txt
-Procesado: k_dacia.txt
-Procesado: k_damot.txt
-Procesado: k_darfur.txt
-Procesado: k_daylam.txt
-Procesado: k_delhi.txt
-Procesado: k_denmark.txt
-Procesado: k_dvaravati.txt
-Procesado: k_dzungaria.txt
-Procesado: k_east_francia.txt
-Procesado: k_egypt.txt
-Procesado: k_england.txt
-Procesado: k_epirus.txt
-Procesado: k_esthonia.txt
-Procesado: k_finland.txt
-Procesado: k_france.txt
-Procesado: k_frisia.txt
-Procesado: k_galicia-volhynia.txt
-Procesado: k_georgia.txt
-Procesado: k_ghana.txt
-Procesado: k_gobi.txt
-Procesado: k_gondwana.txt
-Procesado: k_goryeo.txt
-Procesado: k_guangnan_east.txt
-Procesado: k_guge.txt
-Procesado: k_guinea.txt
-Procesado: k_gujarat.txt
-Procesado: k_gur.txt
-Procesado: k_gurma.txt
-Procesado: k_gyalrong.txt
-Procesado: k_hausaland.txt
-Procesado: k_hellas.txt
-Procesado: k_himalaya.txt
-Procesado: k_hujung_medini.txt
-Procesado: k_hungary.txt
-Procesado: k_igbo-benue.txt
-Procesado: k_ireland.txt
-Procesado: k_italy.txt
-Procesado: k_jazira.txt
-Procesado: k_jenne.txt
-Procesado: k_jerusalem.txt
-Procesado: k_kabulistan.txt
-Procesado: k_kamarupa.txt
-Procesado: k_kanem.txt
-Procesado: k_karnata.txt
-Procesado: k_kashmir.txt
-Procesado: k_khakassia.txt
-Procesado: k_kham.txt
-Procesado: k_khitan.txt
-Procesado: k_khorasan.txt
-Procesado: k_khotan.txt
-Procesado: k_kipchak.txt
-Procesado: k_kong.txt
-Procesado: k_kosala.txt
-Procesado: k_krete.txt
-Procesado: k_lanka.txt
-Procesado: k_leon.txt
-Procesado: k_lhomon.txt
-Procesado: k_lingnan.txt
-Procesado: k_lithuania.txt
-Procesado: k_lotharingia.txt
-Procesado: k_luzhen.txt
-Procesado: k_maghreb.txt
-Procesado: k_maharastra.txt
-Procesado: k_makran.txt
-Procesado: k_malayadvipa.txt
-Procesado: k_mali.txt
-Procesado: k_maluku.txt
-Procesado: k_malwa.txt
-Procesado: k_maryul.txt
-Procesado: k_mesopotamia.txt
-Procesado: k_moldavia.txt
-Procesado: k_mongolia.txt
-Procesado: k_mordvinia.txt
-Procesado: k_naimania.txt
-Procesado: k_navarra.txt
-Procesado: k_nikaea.txt
-Procesado: k_norway.txt
-Procesado: k_novgorod.txt
-Procesado: k_nubia.txt
-Procesado: k_ob.txt
-Procesado: k_oghuz_il.txt
-Procesado: k_opolye.txt
-Procesado: k_orissa.txt
-Procesado: k_pagan.txt
-Procesado: k_permia.txt
-Procesado: k_persia.txt
-Procesado: k_philippines.txt
-Procesado: k_poland.txt
-Procesado: k_pomerania.txt
-Procesado: k_pontic_steppe.txt
-Procesado: k_pontus.txt
-Procesado: k_punjab.txt
-Procesado: k_qara_dala.txt
-Procesado: k_rajputana.txt
-Procesado: k_romagna.txt
-Procesado: k_ruthenia.txt
-Procesado: k_sahara.txt
-Procesado: k_sakhalin.txt
-Procesado: k_sao.txt
-Procesado: k_sapmi.txt
-Procesado: k_sardinia.txt
-Procesado: k_saryarka.txt
-Procesado: k_scotland.txt
-Procesado: k_serbia.txt
-Procesado: k_shiwei.txt
-Procesado: k_sibir.txt
-Procesado: k_sicily.txt
-Procesado: k_sindh.txt
-Procesado: k_songhay.txt
-Procesado: k_spanish_galicia.txt
-Procesado: k_sulawesi.txt
-Procesado: k_sweden.txt
-Procesado: k_syria.txt
-Procesado: k_syr_darya.txt
-Procesado: k_tahert.txt
-Procesado: k_takrur.txt
-Procesado: k_tamilakam.txt
-Procesado: k_telingana.txt
-Procesado: k_thessalonika.txt
-Procesado: k_transoxiana.txt
-Procesado: k_tsang.txt
-Procesado: k_tuva.txt
-Procesado: k_u.txt
-Procesado: k_valencia.txt
-Procesado: k_venice.txt
-Procesado: k_volga_bulgaria.txt
-Procesado: k_wales.txt
-Procesado: k_white_rus.txt
-Procesado: k_xia.txt
-Procesado: k_yavakadvipa.txt
-Procesado: k_yemen.txt
-Procesado: k_yorubaland.txt
-Procesado: k_yugra.txt
-Procesado: k_zanj.txt
-Procesado: k_zhetysu.txt
+--- Procesado history/provinces --- 2026-02-08 14:15:57.845464
+Procesado (cambia fecha): e_china.txt
+Procesado (cambia fecha): e_dali.txt
+Procesado (cambia fecha): e_japan.txt
+Procesado (cambia fecha): e_kambuja.txt
+Procesado (cambia fecha): e_viet.txt
+Procesado (cambia fecha): k_abyssinia.txt
+Procesado (cambia fecha): k_adal.txt
+Procesado (cambia fecha): k_africa.txt
+Procesado (cambia fecha): k_ajuraan.txt
+Sin cambios de fecha (no copiado al mod): k_akan.txt
+Procesado (cambia fecha): k_amdo.txt
+Procesado (cambia fecha): k_amur.txt
+Procesado (cambia fecha): k_anatolia.txt
+Procesado (cambia fecha): k_anbiya.txt
+Procesado (cambia fecha): k_andalusia.txt
+Procesado (cambia fecha): k_andhra.txt
+Procesado (cambia fecha): k_angara.txt
+Procesado (cambia fecha): k_aquitaine.txt
+Procesado (cambia fecha): k_arabia.txt
+Procesado (cambia fecha): k_aragon.txt
+Procesado (cambia fecha): k_armenia.txt
+Procesado (cambia fecha): k_badajoz.txt
+Procesado (cambia fecha): k_bale.txt
+Procesado (cambia fecha): k_balhae.txt
+Procesado (cambia fecha): k_bashkiria.txt
+Procesado (cambia fecha): k_bavaria.txt
+Procesado (cambia fecha): k_bengal.txt
+Procesado (cambia fecha): k_bihar.txt
+Procesado (cambia fecha): k_bjarmaland.txt
+Procesado (cambia fecha): k_blemmyia.txt
+Procesado (cambia fecha): k_bohemia.txt
+Procesado (cambia fecha): k_borgu.txt
+Procesado (cambia fecha): k_borneo.txt
+Procesado (cambia fecha): k_brittany.txt
+Procesado (cambia fecha): k_bulgaria.txt
+Procesado (cambia fecha): k_burgundy.txt
+Procesado (cambia fecha): k_buryatia.txt
+Procesado (cambia fecha): k_caspian_steppe.txt
+Procesado (cambia fecha): k_castille.txt
+Procesado (cambia fecha): k_caucasus.txt
+Procesado (cambia fecha): k_croatia.txt
+Procesado (cambia fecha): k_cuman.txt
+Procesado (cambia fecha): k_cyprus.txt
+Procesado (cambia fecha): k_dacia.txt
+Procesado (cambia fecha): k_damot.txt
+Procesado (cambia fecha): k_darfur.txt
+Procesado (cambia fecha): k_daylam.txt
+Procesado (cambia fecha): k_delhi.txt
+Procesado (cambia fecha): k_denmark.txt
+Procesado (cambia fecha): k_dvaravati.txt
+Procesado (cambia fecha): k_dzungaria.txt
+Procesado (cambia fecha): k_east_francia.txt
+Procesado (cambia fecha): k_egypt.txt
+Procesado (cambia fecha): k_england.txt
+Procesado (cambia fecha): k_epirus.txt
+Procesado (cambia fecha): k_esthonia.txt
+Procesado (cambia fecha): k_finland.txt
+Procesado (cambia fecha): k_france.txt
+Procesado (cambia fecha): k_frisia.txt
+Procesado (cambia fecha): k_galicia-volhynia.txt
+Procesado (cambia fecha): k_georgia.txt
+Procesado (cambia fecha): k_ghana.txt
+Sin cambios de fecha (no copiado al mod): k_gobi.txt
+Procesado (cambia fecha): k_gondwana.txt
+Procesado (cambia fecha): k_goryeo.txt
+Sin cambios de fecha (no copiado al mod): k_guangnan_east.txt
+Procesado (cambia fecha): k_guge.txt
+Sin cambios de fecha (no copiado al mod): k_guinea.txt
+Procesado (cambia fecha): k_gujarat.txt
+Procesado (cambia fecha): k_gur.txt
+Procesado (cambia fecha): k_gurma.txt
+Procesado (cambia fecha): k_gyalrong.txt
+Procesado (cambia fecha): k_hausaland.txt
+Procesado (cambia fecha): k_hellas.txt
+Sin cambios de fecha (no copiado al mod): k_himalaya.txt
+Procesado (cambia fecha): k_hujung_medini.txt
+Procesado (cambia fecha): k_hungary.txt
+Sin cambios de fecha (no copiado al mod): k_igbo-benue.txt
+Procesado (cambia fecha): k_ireland.txt
+Procesado (cambia fecha): k_italy.txt
+Procesado (cambia fecha): k_jazira.txt
+Procesado (cambia fecha): k_jenne.txt
+Procesado (cambia fecha): k_jerusalem.txt
+Procesado (cambia fecha): k_kabulistan.txt
+Procesado (cambia fecha): k_kamarupa.txt
+Procesado (cambia fecha): k_kanem.txt
+Procesado (cambia fecha): k_karnata.txt
+Procesado (cambia fecha): k_kashmir.txt
+Procesado (cambia fecha): k_khakassia.txt
+Procesado (cambia fecha): k_kham.txt
+Procesado (cambia fecha): k_khitan.txt
+Procesado (cambia fecha): k_khorasan.txt
+Procesado (cambia fecha): k_khotan.txt
+Procesado (cambia fecha): k_kipchak.txt
+Sin cambios de fecha (no copiado al mod): k_kong.txt
+Procesado (cambia fecha): k_kosala.txt
+Procesado (cambia fecha): k_krete.txt
+Procesado (cambia fecha): k_lanka.txt
+Procesado (cambia fecha): k_leon.txt
+Sin cambios de fecha (no copiado al mod): k_lhomon.txt
+Sin cambios de fecha (no copiado al mod): k_lingnan.txt
+Procesado (cambia fecha): k_lithuania.txt
+Procesado (cambia fecha): k_lotharingia.txt
+Procesado (cambia fecha): k_luzhen.txt
+Procesado (cambia fecha): k_maghreb.txt
+Procesado (cambia fecha): k_maharastra.txt
+Procesado (cambia fecha): k_makran.txt
+Procesado (cambia fecha): k_malayadvipa.txt
+Procesado (cambia fecha): k_mali.txt
+Sin cambios de fecha (no copiado al mod): k_maluku.txt
+Procesado (cambia fecha): k_malwa.txt
+Procesado (cambia fecha): k_maryul.txt
+Procesado (cambia fecha): k_mesopotamia.txt
+Procesado (cambia fecha): k_moldavia.txt
+Procesado (cambia fecha): k_mongolia.txt
+Procesado (cambia fecha): k_mordvinia.txt
+Procesado (cambia fecha): k_naimania.txt
+Procesado (cambia fecha): k_navarra.txt
+Procesado (cambia fecha): k_nikaea.txt
+Procesado (cambia fecha): k_norway.txt
+Procesado (cambia fecha): k_novgorod.txt
+Procesado (cambia fecha): k_nubia.txt
+Procesado (cambia fecha): k_ob.txt
+Procesado (cambia fecha): k_oghuz_il.txt
+Procesado (cambia fecha): k_opolye.txt
+Procesado (cambia fecha): k_orissa.txt
+Procesado (cambia fecha): k_pagan.txt
+Sin cambios de fecha (no copiado al mod): k_permia.txt
+Procesado (cambia fecha): k_persia.txt
+Procesado (cambia fecha): k_philippines.txt
+Procesado (cambia fecha): k_poland.txt
+Procesado (cambia fecha): k_pomerania.txt
+Procesado (cambia fecha): k_pontic_steppe.txt
+Procesado (cambia fecha): k_pontus.txt
+Procesado (cambia fecha): k_punjab.txt
+Procesado (cambia fecha): k_qara_dala.txt
+Procesado (cambia fecha): k_rajputana.txt
+Procesado (cambia fecha): k_romagna.txt
+Procesado (cambia fecha): k_ruthenia.txt
+Procesado (cambia fecha): k_sahara.txt
+Sin cambios de fecha (no copiado al mod): k_sakhalin.txt
+Procesado (cambia fecha): k_sao.txt
+Sin cambios de fecha (no copiado al mod): k_sapmi.txt
+Procesado (cambia fecha): k_sardinia.txt
+Procesado (cambia fecha): k_saryarka.txt
+Procesado (cambia fecha): k_scotland.txt
+Procesado (cambia fecha): k_serbia.txt
+Procesado (cambia fecha): k_shiwei.txt
+Procesado (cambia fecha): k_sibir.txt
+Procesado (cambia fecha): k_sicily.txt
+Procesado (cambia fecha): k_sindh.txt
+Procesado (cambia fecha): k_songhay.txt
+Procesado (cambia fecha): k_spanish_galicia.txt
+Procesado (cambia fecha): k_sulawesi.txt
+Procesado (cambia fecha): k_sweden.txt
+Procesado (cambia fecha): k_syria.txt
+Procesado (cambia fecha): k_syr_darya.txt
+Procesado (cambia fecha): k_tahert.txt
+Procesado (cambia fecha): k_takrur.txt
+Procesado (cambia fecha): k_tamilakam.txt
+Procesado (cambia fecha): k_telingana.txt
+Procesado (cambia fecha): k_thessalonika.txt
+Procesado (cambia fecha): k_transoxiana.txt
+Procesado (cambia fecha): k_tsang.txt
+Procesado (cambia fecha): k_tuva.txt
+Procesado (cambia fecha): k_u.txt
+Procesado (cambia fecha): k_valencia.txt
+Procesado (cambia fecha): k_venice.txt
+Procesado (cambia fecha): k_volga_bulgaria.txt
+Procesado (cambia fecha): k_wales.txt
+Procesado (cambia fecha): k_white_rus.txt
+Procesado (cambia fecha): k_xia.txt
+Procesado (cambia fecha): k_yavakadvipa.txt
+Procesado (cambia fecha): k_yemen.txt
+Procesado (cambia fecha): k_yorubaland.txt
+Sin cambios de fecha (no copiado al mod): k_yugra.txt
+Procesado (cambia fecha): k_zanj.txt
+Procesado (cambia fecha): k_zhetysu.txt
+
+--- Procesado history/provinces --- 2026-02-08 14:22:16.336841
+Procesado (cambia fecha): e_china.txt
+Procesado (cambia fecha): e_dali.txt
+Procesado (cambia fecha): e_japan.txt
+Procesado (cambia fecha): e_kambuja.txt
+Procesado (cambia fecha): e_viet.txt
+Procesado (cambia fecha): k_abyssinia.txt
+Procesado (cambia fecha): k_adal.txt
+Procesado (cambia fecha): k_africa.txt
+Procesado (cambia fecha): k_ajuraan.txt
+Sin cambios de fecha (no copiado al mod): k_akan.txt
+Procesado (cambia fecha): k_amdo.txt
+Procesado (cambia fecha): k_amur.txt
+Procesado (cambia fecha): k_anatolia.txt
+Procesado (cambia fecha): k_anbiya.txt
+Procesado (cambia fecha): k_andalusia.txt
+Procesado (cambia fecha): k_andhra.txt
+Procesado (cambia fecha): k_angara.txt
+Procesado (cambia fecha): k_aquitaine.txt
+Procesado (cambia fecha): k_arabia.txt
+Procesado (cambia fecha): k_aragon.txt
+Procesado (cambia fecha): k_armenia.txt
+Procesado (cambia fecha): k_badajoz.txt
+Procesado (cambia fecha): k_bale.txt
+Procesado (cambia fecha): k_balhae.txt
+Procesado (cambia fecha): k_bashkiria.txt
+Procesado (cambia fecha): k_bavaria.txt
+Procesado (cambia fecha): k_bengal.txt
+Procesado (cambia fecha): k_bihar.txt
+Procesado (cambia fecha): k_bjarmaland.txt
+Procesado (cambia fecha): k_blemmyia.txt
+Procesado (cambia fecha): k_bohemia.txt
+Procesado (cambia fecha): k_borgu.txt
+Procesado (cambia fecha): k_borneo.txt
+Procesado (cambia fecha): k_brittany.txt
+Procesado (cambia fecha): k_bulgaria.txt
+Procesado (cambia fecha): k_burgundy.txt
+Procesado (cambia fecha): k_buryatia.txt
+Procesado (cambia fecha): k_caspian_steppe.txt
+Procesado (cambia fecha): k_castille.txt
+Procesado (cambia fecha): k_caucasus.txt
+Procesado (cambia fecha): k_croatia.txt
+Procesado (cambia fecha): k_cuman.txt
+Procesado (cambia fecha): k_cyprus.txt
+Procesado (cambia fecha): k_dacia.txt
+Procesado (cambia fecha): k_damot.txt
+Procesado (cambia fecha): k_darfur.txt
+Procesado (cambia fecha): k_daylam.txt
+Procesado (cambia fecha): k_delhi.txt
+Procesado (cambia fecha): k_denmark.txt
+Procesado (cambia fecha): k_dvaravati.txt
+Procesado (cambia fecha): k_dzungaria.txt
+Procesado (cambia fecha): k_east_francia.txt
+Procesado (cambia fecha): k_egypt.txt
+Procesado (cambia fecha): k_england.txt
+Procesado (cambia fecha): k_epirus.txt
+Procesado (cambia fecha): k_esthonia.txt
+Procesado (cambia fecha): k_finland.txt
+Procesado (cambia fecha): k_france.txt
+Procesado (cambia fecha): k_frisia.txt
+Procesado (cambia fecha): k_galicia-volhynia.txt
+Procesado (cambia fecha): k_georgia.txt
+Procesado (cambia fecha): k_ghana.txt
+Sin cambios de fecha (no copiado al mod): k_gobi.txt
+Procesado (cambia fecha): k_gondwana.txt
+Procesado (cambia fecha): k_goryeo.txt
+Sin cambios de fecha (no copiado al mod): k_guangnan_east.txt
+Procesado (cambia fecha): k_guge.txt
+Sin cambios de fecha (no copiado al mod): k_guinea.txt
+Procesado (cambia fecha): k_gujarat.txt
+Procesado (cambia fecha): k_gur.txt
+Procesado (cambia fecha): k_gurma.txt
+Procesado (cambia fecha): k_gyalrong.txt
+Procesado (cambia fecha): k_hausaland.txt
+Procesado (cambia fecha): k_hellas.txt
+Sin cambios de fecha (no copiado al mod): k_himalaya.txt
+Procesado (cambia fecha): k_hujung_medini.txt
+Procesado (cambia fecha): k_hungary.txt
+Sin cambios de fecha (no copiado al mod): k_igbo-benue.txt
+Procesado (cambia fecha): k_ireland.txt
+Procesado (cambia fecha): k_italy.txt
+Procesado (cambia fecha): k_jazira.txt
+Procesado (cambia fecha): k_jenne.txt
+Procesado (cambia fecha): k_jerusalem.txt
+Procesado (cambia fecha): k_kabulistan.txt
+Procesado (cambia fecha): k_kamarupa.txt
+Procesado (cambia fecha): k_kanem.txt
+Procesado (cambia fecha): k_karnata.txt
+Procesado (cambia fecha): k_kashmir.txt
+Procesado (cambia fecha): k_khakassia.txt
+Procesado (cambia fecha): k_kham.txt
+Procesado (cambia fecha): k_khitan.txt
+Procesado (cambia fecha): k_khorasan.txt
+Procesado (cambia fecha): k_khotan.txt
+Procesado (cambia fecha): k_kipchak.txt
+Sin cambios de fecha (no copiado al mod): k_kong.txt
+Procesado (cambia fecha): k_kosala.txt
+Procesado (cambia fecha): k_krete.txt
+Procesado (cambia fecha): k_lanka.txt
+Procesado (cambia fecha): k_leon.txt
+Sin cambios de fecha (no copiado al mod): k_lhomon.txt
+Sin cambios de fecha (no copiado al mod): k_lingnan.txt
+Procesado (cambia fecha): k_lithuania.txt
+Procesado (cambia fecha): k_lotharingia.txt
+Procesado (cambia fecha): k_luzhen.txt
+Procesado (cambia fecha): k_maghreb.txt
+Procesado (cambia fecha): k_maharastra.txt
+Procesado (cambia fecha): k_makran.txt
+Procesado (cambia fecha): k_malayadvipa.txt
+Procesado (cambia fecha): k_mali.txt
+Sin cambios de fecha (no copiado al mod): k_maluku.txt
+Procesado (cambia fecha): k_malwa.txt
+Procesado (cambia fecha): k_maryul.txt
+Procesado (cambia fecha): k_mesopotamia.txt
+Procesado (cambia fecha): k_moldavia.txt
+Procesado (cambia fecha): k_mongolia.txt
+Procesado (cambia fecha): k_mordvinia.txt
+Procesado (cambia fecha): k_naimania.txt
+Procesado (cambia fecha): k_navarra.txt
+Procesado (cambia fecha): k_nikaea.txt
+Procesado (cambia fecha): k_norway.txt
+Procesado (cambia fecha): k_novgorod.txt
+Procesado (cambia fecha): k_nubia.txt
+Procesado (cambia fecha): k_ob.txt
+Procesado (cambia fecha): k_oghuz_il.txt
+Procesado (cambia fecha): k_opolye.txt
+Procesado (cambia fecha): k_orissa.txt
+Procesado (cambia fecha): k_pagan.txt
+Sin cambios de fecha (no copiado al mod): k_permia.txt
+Procesado (cambia fecha): k_persia.txt
+Procesado (cambia fecha): k_philippines.txt
+Procesado (cambia fecha): k_poland.txt
+Procesado (cambia fecha): k_pomerania.txt
+Procesado (cambia fecha): k_pontic_steppe.txt
+Procesado (cambia fecha): k_pontus.txt
+Procesado (cambia fecha): k_punjab.txt
+Procesado (cambia fecha): k_qara_dala.txt
+Procesado (cambia fecha): k_rajputana.txt
+Procesado (cambia fecha): k_romagna.txt
+Procesado (cambia fecha): k_ruthenia.txt
+Procesado (cambia fecha): k_sahara.txt
+Sin cambios de fecha (no copiado al mod): k_sakhalin.txt
+Procesado (cambia fecha): k_sao.txt
+Sin cambios de fecha (no copiado al mod): k_sapmi.txt
+Procesado (cambia fecha): k_sardinia.txt
+Procesado (cambia fecha): k_saryarka.txt
+Procesado (cambia fecha): k_scotland.txt
+Procesado (cambia fecha): k_serbia.txt
+Procesado (cambia fecha): k_shiwei.txt
+Procesado (cambia fecha): k_sibir.txt
+Procesado (cambia fecha): k_sicily.txt
+Procesado (cambia fecha): k_sindh.txt
+Procesado (cambia fecha): k_songhay.txt
+Procesado (cambia fecha): k_spanish_galicia.txt
+Procesado (cambia fecha): k_sulawesi.txt
+Procesado (cambia fecha): k_sweden.txt
+Procesado (cambia fecha): k_syria.txt
+Procesado (cambia fecha): k_syr_darya.txt
+Procesado (cambia fecha): k_tahert.txt
+Procesado (cambia fecha): k_takrur.txt
+Procesado (cambia fecha): k_tamilakam.txt
+Procesado (cambia fecha): k_telingana.txt
+Procesado (cambia fecha): k_thessalonika.txt
+Procesado (cambia fecha): k_transoxiana.txt
+Procesado (cambia fecha): k_tsang.txt
+Procesado (cambia fecha): k_tuva.txt
+Procesado (cambia fecha): k_u.txt
+Procesado (cambia fecha): k_valencia.txt
+Procesado (cambia fecha): k_venice.txt
+Procesado (cambia fecha): k_volga_bulgaria.txt
+Procesado (cambia fecha): k_wales.txt
+Procesado (cambia fecha): k_white_rus.txt
+Procesado (cambia fecha): k_xia.txt
+Procesado (cambia fecha): k_yavakadvipa.txt
+Procesado (cambia fecha): k_yemen.txt
+Procesado (cambia fecha): k_yorubaland.txt
+Sin cambios de fecha (no copiado al mod): k_yugra.txt
+Procesado (cambia fecha): k_zanj.txt
+Procesado (cambia fecha): k_zhetysu.txt

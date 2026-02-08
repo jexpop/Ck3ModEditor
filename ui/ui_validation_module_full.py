@@ -81,7 +81,9 @@ class ValidationModuleFullTab:
             if module_name not in game_modules:
                 continue
 
-            rel = game_modules[module_name]["path"]
+            cfg = game_modules[module_name]
+            rel = cfg["path"]
+            ignore_ext = cfg.get("ignore_ext", [])
 
             game_dir = os.path.join(profile["game_root"], rel)
             mod_dir = os.path.join(profile["mod_root"], rel)
@@ -100,6 +102,11 @@ class ValidationModuleFullTab:
             game_equal = game_changed = game_only = backup_only_game = 0
 
             for f in all_files:
+                ext = os.path.splitext(f)[1].lower()
+                # 🔥 Ignorar extensiones definidas en modules.json (por ejemplo .info)
+                if ext in ignore_ext:
+                    continue
+
                 mod_path = os.path.join(mod_dir, f)
                 game_path = os.path.join(game_dir, f)
                 backup_path = os.path.join(backup_dir, f)

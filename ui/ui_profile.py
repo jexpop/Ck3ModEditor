@@ -86,7 +86,7 @@ class ProfileTab:
         if not profile:
             return
 
-        # 🔥 Mostrar el perfil seleccionado en el combo
+        # Mostrar el perfil seleccionado en el combo
         self.profile_combo.set(profile["name"])
 
         # Rellenar rutas
@@ -102,7 +102,11 @@ class ProfileTab:
         # Cargar módulos por defecto
         self.load_profile_modules()
 
+    # ---------------------------------------------------------
+    # Mostrar módulos en columnas
+    # ---------------------------------------------------------
     def load_profile_modules(self):
+        # Limpiar contenido previo
         for w in self.profile_modules_frame.winfo_children():
             w.destroy()
 
@@ -115,11 +119,24 @@ class ProfileTab:
 
         self.profile_module_vars = {}
 
-        for module_name in game_modules.keys():
+        # Número de columnas
+        cols = 3
+        row = 0
+        col = 0
+
+        # Ordenar módulos alfabéticamente
+        for module_name in sorted(game_modules.keys()):
             var = tk.IntVar(value=1 if module_name in profile["modules"] else 0)
             chk = tk.Checkbutton(self.profile_modules_frame, text=module_name, variable=var)
-            chk.pack(anchor="w")
+
+            chk.grid(row=row, column=col, sticky="w", padx=5, pady=2)
+
             self.profile_module_vars[module_name] = var
+
+            col += 1
+            if col >= cols:
+                col = 0
+                row += 1
 
     # ---------------------------------------------------------
     # Guardar perfil
@@ -186,12 +203,9 @@ class ProfileTab:
                 messagebox.showerror("Error", "Nombre vacío")
                 return
 
-            # Actualizar
-            old_name = profile["name"]
             profile["name"] = new_name
             update_profile(profile)
 
-            # Refrescar combo
             self.profile_combo["values"] = list_profiles()
             self.profile_combo.set(new_name)
 

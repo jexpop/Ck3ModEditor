@@ -1,150 +1,300 @@
 
---- Procesado common/customizable_localization --- 2026-02-08 01:18:45.763929
-Procesado: 00_activity_loc.txt
-Procesado: 00_adventurer_names.txt
-Procesado: 00_ai_value_custom_loc.txt
-Procesado: 00_animal_custom_loc.txt
-Procesado: 00_appropriate_generic_words.txt
-Procesado: 00_artifact_court_custom_loc.txt
-Procesado: 00_artifact_custom_loc.txt
-Procesado: 00_bad_roomate_custom_loc.txt
-Procesado: 00_board_game_custom_loc.txt
-Procesado: 00_body_part_custom_loc.txt
-Procesado: 00_bp3_wanderer_loc.txt
-Procesado: 00_building_custom_localization.txt
-Procesado: 00_camp_party_custom_loc.txt
-Procesado: 00_casus_belli.txt
-Procesado: 00_character_descriptions.txt
-Procesado: 00_character_interaction_categories.txt
-Procesado: 00_childhood_custom_localization.txt
-Procesado: 00_compliment_custom_loc.txt
-Procesado: 00_conversation_subjects.txt
-Procesado: 00_councillor_custom_loc.txt
-Procesado: 00_curses_custom_loc.txt
-Procesado: 00_custom_loc_sp.txt
-Procesado: 00_destination_custom_loc.txt
-Procesado: 00_de_body_part_custom_loc.txt
-Procesado: 00_de_custom_loc.txt
-Procesado: 00_de_mottos.txt
-Procesado: 00_de_regional_custom_localization.txt
-Procesado: 00_de_signature_weapon_custom_localization.txt
-Procesado: 00_de_single_combat_custom_loc.txt
-Procesado: 00_de_special_gender_cases.txt
-Procesado: 00_diarchy_custom_loc.txt
-Procesado: 00_difficulty_custom_loc.txt
-Procesado: 00_disability_custom_loc.txt
-Procesado: 00_divinity_custom_loc.txt
-Procesado: 00_dynasty_custom_loc.txt
-Procesado: 00_education_custom_loc.txt
-Procesado: 00_es_custom_loc.txt
-Procesado: 00_event_custom_loc.txt
-Procesado: 00_faction_custom_loc.txt
-Procesado: 00_feast_custom_loc.txt
-Procesado: 00_food_custom_loc.txt
-Procesado: 00_friendly_custom_localization.txt
-Procesado: 00_friendship_custom_localization.txt
-Procesado: 00_generic_character_words.txt
-Procesado: 00_governance_lifestyle_custom_loc.txt
-Procesado: 00_government_custom_loc.txt
-Procesado: 00_greeting_custom_loc.txt
-Procesado: 00_health_custom_loc.txt
-Procesado: 00_historical_character_loc.txt
-Procesado: 00_hold_court_custom_joe.txt
-Procesado: 00_incidental_details.txt
-Procesado: 00_insult_custom_loc.txt
-Procesado: 00_insult_poetry_custom_loc.txt
-Procesado: 00_interactions_custom_loc.txt
-Procesado: 00_interface_custom_loc.txt
-Procesado: 00_journey_focus_custom_loc.txt
-Procesado: 00_knight_culture.txt
-Procesado: 00_kr_personality_quirks_custom_loc.txt
-Procesado: 00_language_custom_loc.txt
-Procesado: 00_lifestyle_custom_localization.txt
-Procesado: 00_lover_custom_localization.txt
-Procesado: 00_love_letter_custom_loc.txt
-Procesado: 00_maa_custom_loc.txt
-Procesado: 00_magic_custom_loc.txt
-Procesado: 00_map_related_custom_loc.txt
-Procesado: 00_martial_lifestyle_custom_loc.txt
-Procesado: 00_mottos.txt
-Procesado: 00_notification_custom_loc.txt
-Procesado: 00_peasants.txt
-Procesado: 00_personality_quirks_custom_loc.txt
-Procesado: 00_personality_traits_custom_loc.txt
-Procesado: 00_personal_details_custom_loc.txt
-Procesado: 00_petition_liege_custom_loc.txt
-Procesado: 00_pet_custom_loc.txt
-Procesado: 00_pet_name_generic.txt
-Procesado: 00_pilgrimage_custom_loc.txt
-Procesado: 00_pl_custom_loc.txt
-Procesado: 00_pl_custom_loc_extra.txt
-Procesado: 00_pl_relations.txt
-Procesado: 00_poetry_generation.txt
-Procesado: 00_poetry_theme_words.txt
-Procesado: 00_prison_custom_loc.txt
-Procesado: 00_reaction_custom_loc.txt
-Procesado: 00_regional_custom_localization.txt
-Procesado: 00_relations.txt
-Procesado: 00_religion_custom_loc.txt
-Procesado: 00_rich_presence_flavor_status.txt
-Procesado: 00_roaming_loc.txt
-Procesado: 00_romance_custom_loc.txt
-Procesado: 00_ruler_transition_loc.txt
-Procesado: 00_scheme_custom_loc.txt
-Procesado: 00_scholarship_lifestyle_custom_loc.txt
-Procesado: 00_secrets_custom_loc.txt
-Procesado: 00_secret_events_custom_loc.txt
-Procesado: 00_seduction_custom_loc.txt
-Procesado: 00_servants.txt
-Procesado: 00_sex_scene_custom_localisation.txt
-Procesado: 00_signature_weapon_custom_localization.txt
-Procesado: 00_skills_custom_loc.txt
-Procesado: 00_statecraft_lifestyle_custom_loc.txt
-Procesado: 00_suitable_title_custom_loc.txt
-Procesado: 00_sway_custom_loc.txt
-Procesado: 00_task_contract_custom_loc.txt
-Procesado: 00_terrain_custom_loc.txt
-Procesado: 00_test.txt
-Procesado: 00_title_custom_loc.txt
-Procesado: 00_trait_custom_loc.txt
-Procesado: 00_travel.txt
-Procesado: 00_unfriendly_custom_loc.txt
-Procesado: 00_vassal_custom_loc.txt
-Procesado: 00_visit_settlement_custom_loc.txt
-Procesado: 00_war_custom_loc.txt
-Procesado: 00_weird_objects.txt
-Procesado: 00_yearly_events_custom_loc.txt
-Procesado: 01_bp1_custom_loc.txt
-Procesado: 01_bp1_filippa_custom_loc.txt
-Procesado: 01_ep1_custom_loc.txt
-Procesado: 01_ep2_custom_loc.txt
-Procesado: 01_fp1_custom_loc.txt
-Procesado: 01_roco_custom_loc.txt
-Procesado: 02_court_loc.txt
-Procesado: 03_fp2_custom_loc.txt
-Procesado: 04_bp2_custom_loc.txt
-Procesado: 04_ep2_accolade_custom_loc.txt
-Procesado: 04_ep2_custom_loc.txt
-Procesado: 04_ep2_hunt_custom_loc.txt
-Procesado: 05_bp2_custom_loc.txt
-Procesado: 06_ce1_epidemics_custom_loc.txt
-Procesado: 06_ce1_legends_custom_loc.txt
-Procesado: 06_ce1_leg_b_custom_loc.txt
-Procesado: 06_legitimacy_custom_loc.txt
-Procesado: 07_ep3_custom_loc.txt
-Procesado: 08_bp3_battle_poi_custom_loc.txt
-Procesado: 08_bp3_experimental_brew_loc.txt
-Procesado: 08_bp3_survey_loc.txt
-Procesado: 09_de_custom_loc_suffixes.txt
-Procesado: 09_mpo_custom_loc.txt
-Procesado: 09_mpo_custom_loc_2.txt
-Procesado: 10_ach_custom_loc.txt
-Procesado: 10_tgp_custom_loc.txt
-Procesado: 10_tgp_japan_custom_loc.txt
-Procesado: 99_fr_custom_loc.txt
-Procesado: 99_pl_custom_loc.txt
-Procesado: 99_pl_relations.txt
-Procesado: 99_ru_custom_loc.txt
-Procesado: tgp_custom_loc.txt
-Procesado: tgp_imperial_examination_custom_loc.txt
-Procesado: tgp_mandala_custom_loc.txt
+--- Procesado common/customizable_localization --- 2026-02-08 14:15:35.307735
+Sin cambios de fecha (no copiado al mod): 00_activity_loc.txt
+Procesado (cambia fecha): 00_adventurer_names.txt
+Sin cambios de fecha (no copiado al mod): 00_ai_value_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_animal_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_appropriate_generic_words.txt
+Sin cambios de fecha (no copiado al mod): 00_artifact_court_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_artifact_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_bad_roomate_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_board_game_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_body_part_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_bp3_wanderer_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_building_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_camp_party_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_casus_belli.txt
+Sin cambios de fecha (no copiado al mod): 00_character_descriptions.txt
+Sin cambios de fecha (no copiado al mod): 00_character_interaction_categories.txt
+Sin cambios de fecha (no copiado al mod): 00_childhood_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_compliment_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_conversation_subjects.txt
+Sin cambios de fecha (no copiado al mod): 00_councillor_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_curses_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_custom_loc_sp.txt
+Sin cambios de fecha (no copiado al mod): 00_destination_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_body_part_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_mottos.txt
+Sin cambios de fecha (no copiado al mod): 00_de_regional_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_de_signature_weapon_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_de_single_combat_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_special_gender_cases.txt
+Sin cambios de fecha (no copiado al mod): 00_diarchy_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_difficulty_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_disability_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_divinity_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_dynasty_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_education_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_es_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_event_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_faction_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_feast_custom_loc.txt
+Procesado (cambia fecha): 00_food_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_friendly_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_friendship_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_generic_character_words.txt
+Sin cambios de fecha (no copiado al mod): 00_governance_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_government_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_greeting_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_health_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_historical_character_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_hold_court_custom_joe.txt
+Sin cambios de fecha (no copiado al mod): 00_incidental_details.txt
+Sin cambios de fecha (no copiado al mod): 00_insult_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_insult_poetry_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_interactions_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_interface_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_journey_focus_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_knight_culture.txt
+Sin cambios de fecha (no copiado al mod): 00_kr_personality_quirks_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_language_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_lifestyle_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_lover_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_love_letter_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_maa_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_magic_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_map_related_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_martial_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_mottos.txt
+Sin cambios de fecha (no copiado al mod): 00_notification_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_peasants.txt
+Sin cambios de fecha (no copiado al mod): 00_personality_quirks_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_personality_traits_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_personal_details_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_petition_liege_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pet_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pet_name_generic.txt
+Sin cambios de fecha (no copiado al mod): 00_pilgrimage_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pl_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pl_custom_loc_extra.txt
+Sin cambios de fecha (no copiado al mod): 00_pl_relations.txt
+Sin cambios de fecha (no copiado al mod): 00_poetry_generation.txt
+Sin cambios de fecha (no copiado al mod): 00_poetry_theme_words.txt
+Sin cambios de fecha (no copiado al mod): 00_prison_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_reaction_custom_loc.txt
+Procesado (cambia fecha): 00_regional_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_relations.txt
+Sin cambios de fecha (no copiado al mod): 00_religion_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_rich_presence_flavor_status.txt
+Sin cambios de fecha (no copiado al mod): 00_roaming_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_romance_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_ruler_transition_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_scheme_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_scholarship_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_secrets_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_secret_events_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_seduction_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_servants.txt
+Sin cambios de fecha (no copiado al mod): 00_sex_scene_custom_localisation.txt
+Sin cambios de fecha (no copiado al mod): 00_signature_weapon_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_skills_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_statecraft_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_suitable_title_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_sway_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_task_contract_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_terrain_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_test.txt
+Sin cambios de fecha (no copiado al mod): 00_title_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_trait_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_travel.txt
+Sin cambios de fecha (no copiado al mod): 00_unfriendly_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_vassal_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_visit_settlement_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_war_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_weird_objects.txt
+Sin cambios de fecha (no copiado al mod): 00_yearly_events_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_bp1_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_bp1_filippa_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_ep1_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_ep2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_fp1_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_roco_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 02_court_loc.txt
+Sin cambios de fecha (no copiado al mod): 03_fp2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_bp2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_accolade_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_hunt_custom_loc.txt
+Procesado (cambia fecha): 05_bp2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_epidemics_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_legends_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_leg_b_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_legitimacy_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 07_ep3_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_battle_poi_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_experimental_brew_loc.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_survey_loc.txt
+Sin cambios de fecha (no copiado al mod): 09_de_custom_loc_suffixes.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_custom_loc_2.txt
+Sin cambios de fecha (no copiado al mod): 10_ach_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_japan_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 99_fr_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 99_pl_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 99_pl_relations.txt
+Sin cambios de fecha (no copiado al mod): 99_ru_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): tgp_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): tgp_imperial_examination_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_custom_loc.txt
+
+--- Procesado common/customizable_localization --- 2026-02-08 14:22:11.174233
+Sin cambios de fecha (no copiado al mod): 00_activity_loc.txt
+Procesado (cambia fecha): 00_adventurer_names.txt
+Sin cambios de fecha (no copiado al mod): 00_ai_value_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_animal_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_appropriate_generic_words.txt
+Sin cambios de fecha (no copiado al mod): 00_artifact_court_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_artifact_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_bad_roomate_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_board_game_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_body_part_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_bp3_wanderer_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_building_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_camp_party_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_casus_belli.txt
+Sin cambios de fecha (no copiado al mod): 00_character_descriptions.txt
+Sin cambios de fecha (no copiado al mod): 00_character_interaction_categories.txt
+Sin cambios de fecha (no copiado al mod): 00_childhood_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_compliment_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_conversation_subjects.txt
+Sin cambios de fecha (no copiado al mod): 00_councillor_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_curses_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_custom_loc_sp.txt
+Sin cambios de fecha (no copiado al mod): 00_destination_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_body_part_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_mottos.txt
+Sin cambios de fecha (no copiado al mod): 00_de_regional_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_de_signature_weapon_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_de_single_combat_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_de_special_gender_cases.txt
+Sin cambios de fecha (no copiado al mod): 00_diarchy_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_difficulty_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_disability_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_divinity_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_dynasty_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_education_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_es_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_event_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_faction_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_feast_custom_loc.txt
+Procesado (cambia fecha): 00_food_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_friendly_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_friendship_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_generic_character_words.txt
+Sin cambios de fecha (no copiado al mod): 00_governance_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_government_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_greeting_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_health_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_historical_character_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_hold_court_custom_joe.txt
+Sin cambios de fecha (no copiado al mod): 00_incidental_details.txt
+Sin cambios de fecha (no copiado al mod): 00_insult_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_insult_poetry_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_interactions_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_interface_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_journey_focus_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_knight_culture.txt
+Sin cambios de fecha (no copiado al mod): 00_kr_personality_quirks_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_language_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_lifestyle_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_lover_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_love_letter_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_maa_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_magic_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_map_related_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_martial_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_mottos.txt
+Sin cambios de fecha (no copiado al mod): 00_notification_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_peasants.txt
+Sin cambios de fecha (no copiado al mod): 00_personality_quirks_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_personality_traits_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_personal_details_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_petition_liege_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pet_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pet_name_generic.txt
+Sin cambios de fecha (no copiado al mod): 00_pilgrimage_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pl_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_pl_custom_loc_extra.txt
+Sin cambios de fecha (no copiado al mod): 00_pl_relations.txt
+Sin cambios de fecha (no copiado al mod): 00_poetry_generation.txt
+Sin cambios de fecha (no copiado al mod): 00_poetry_theme_words.txt
+Sin cambios de fecha (no copiado al mod): 00_prison_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_reaction_custom_loc.txt
+Procesado (cambia fecha): 00_regional_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_relations.txt
+Sin cambios de fecha (no copiado al mod): 00_religion_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_rich_presence_flavor_status.txt
+Sin cambios de fecha (no copiado al mod): 00_roaming_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_romance_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_ruler_transition_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_scheme_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_scholarship_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_secrets_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_secret_events_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_seduction_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_servants.txt
+Sin cambios de fecha (no copiado al mod): 00_sex_scene_custom_localisation.txt
+Sin cambios de fecha (no copiado al mod): 00_signature_weapon_custom_localization.txt
+Sin cambios de fecha (no copiado al mod): 00_skills_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_statecraft_lifestyle_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_suitable_title_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_sway_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_task_contract_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_terrain_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_test.txt
+Sin cambios de fecha (no copiado al mod): 00_title_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_trait_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_travel.txt
+Sin cambios de fecha (no copiado al mod): 00_unfriendly_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_vassal_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_visit_settlement_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_war_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 00_weird_objects.txt
+Sin cambios de fecha (no copiado al mod): 00_yearly_events_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_bp1_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_bp1_filippa_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_ep1_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_ep2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_fp1_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 01_roco_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 02_court_loc.txt
+Sin cambios de fecha (no copiado al mod): 03_fp2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_bp2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_accolade_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 04_ep2_hunt_custom_loc.txt
+Procesado (cambia fecha): 05_bp2_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_epidemics_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_legends_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_ce1_leg_b_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 06_legitimacy_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 07_ep3_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_battle_poi_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_experimental_brew_loc.txt
+Sin cambios de fecha (no copiado al mod): 08_bp3_survey_loc.txt
+Sin cambios de fecha (no copiado al mod): 09_de_custom_loc_suffixes.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 09_mpo_custom_loc_2.txt
+Sin cambios de fecha (no copiado al mod): 10_ach_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 10_tgp_japan_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 99_fr_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 99_pl_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): 99_pl_relations.txt
+Sin cambios de fecha (no copiado al mod): 99_ru_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): tgp_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): tgp_imperial_examination_custom_loc.txt
+Sin cambios de fecha (no copiado al mod): tgp_mandala_custom_loc.txt
