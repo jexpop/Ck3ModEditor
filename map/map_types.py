@@ -1,0 +1,5 @@
+SEA = "sea"
+LAKE = "lake"
+RIVER = "river"
+IMPASSABLE = "impassable"
+LAND = "land"

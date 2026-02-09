@@ -9,6 +9,9 @@
         },
         "hud": {
             "path": "gui/hud.gui"
+        },
+        "frontend_bookmarks": {
+            "path": "gui/frontend_bookmarks.gui"
         }
     }
 }

@@ -1,13 +1,14 @@
-import tkinter as tk
-from tkinter import ttk, messagebox
+from PyQt6.QtWidgets import (
+    QWidget, QLabel, QLineEdit, QPushButton, QListWidget,
+    QVBoxLayout, QHBoxLayout, QMessageBox
+)
 import json
-import os
 
 
-class ModulesTab:
-    def __init__(self, parent, app):
+class ModulesTabQt(QWidget):
+    def __init__(self, app):
+        super().__init__()
         self.app = app
-        self.frame = ttk.Frame(parent)
 
         self.build_ui()
 
@@ -15,34 +16,43 @@ class ModulesTab:
     # UI
     # ---------------------------------------------------------
     def build_ui(self):
-        frame = self.frame
+        layout = QVBoxLayout(self)
 
-        tk.Label(frame, text="Juego del perfil actual:").pack()
-        self.label_game = tk.Label(frame, text="")
-        self.label_game.pack()
+        # Juego del perfil
+        layout.addWidget(QLabel("Juego del perfil actual:"))
+        self.label_game = QLabel("")
+        layout.addWidget(self.label_game)
 
         # Lista de módulos
-        self.listbox = tk.Listbox(frame, width=50, height=15)
-        self.listbox.pack()
-        self.listbox.bind("<<ListboxSelect>>", self.on_module_selected)
+        self.listbox = QListWidget()
+        self.listbox.itemSelectionChanged.connect(self.on_module_selected)
+        layout.addWidget(self.listbox)
 
         # Campos de edición
-        tk.Label(frame, text="Nombre del módulo:").pack()
-        self.entry_name = tk.Entry(frame, width=40)
-        self.entry_name.pack()
+        layout.addWidget(QLabel("Nombre del módulo:"))
+        self.entry_name = QLineEdit()
+        layout.addWidget(self.entry_name)
 
-        tk.Label(frame, text="Ruta relativa:").pack()
-        self.entry_path = tk.Entry(frame, width=40)
-        self.entry_path.pack()
+        layout.addWidget(QLabel("Ruta relativa:"))
+        self.entry_path = QLineEdit()
+        layout.addWidget(self.entry_path)
 
-        tk.Label(frame, text="Extensiones ignoradas (coma):").pack()
-        self.entry_ignore = tk.Entry(frame, width=40)
-        self.entry_ignore.pack()
+        layout.addWidget(QLabel("Extensiones ignoradas (coma):"))
+        self.entry_ignore = QLineEdit()
+        layout.addWidget(self.entry_ignore)
 
         # Botones
-        tk.Button(frame, text="Añadir módulo", command=self.add_module).pack(pady=5)
-        tk.Button(frame, text="Guardar cambios", command=self.save_module).pack(pady=5)
-        tk.Button(frame, text="Eliminar módulo", command=self.delete_module).pack(pady=5)
+        btn_add = QPushButton("Añadir módulo")
+        btn_add.clicked.connect(self.add_module)
+        layout.addWidget(btn_add)
+
+        btn_save = QPushButton("Guardar cambios")
+        btn_save.clicked.connect(self.save_module)
+        layout.addWidget(btn_save)
+
+        btn_delete = QPushButton("Eliminar módulo")
+        btn_delete.clicked.connect(self.delete_module)
+        layout.addWidget(btn_delete)
 
     # ---------------------------------------------------------
     # REFRESH
@@ -53,7 +63,7 @@ class ModulesTab:
             return
 
         game_key = profile["game"]
-        self.label_game.config(text=game_key)
+        self.label_game.setText(game_key)
 
         self.load_modules()
 
@@ -61,7 +71,7 @@ class ModulesTab:
     # Cargar módulos en la lista
     # ---------------------------------------------------------
     def load_modules(self):
-        self.listbox.delete(0, tk.END)
+        self.listbox.clear()
 
         profile = self.app.current_profile
         if not profile:
@@ -70,35 +80,30 @@ class ModulesTab:
         game_key = profile["game"]
         game_modules = self.app.modules.get(game_key, {})
 
-        for name in game_modules.keys():
-            self.listbox.insert(tk.END, name)
+        for name in sorted(game_modules.keys()):
+            self.listbox.addItem(name)
 
     # ---------------------------------------------------------
     # Selección de módulo
     # ---------------------------------------------------------
-    def on_module_selected(self, event=None):
-        sel = self.listbox.curselection()
-        if not sel:
+    def on_module_selected(self):
+        items = self.listbox.selectedItems()
+        if not items:
             return
 
-        name = self.listbox.get(sel[0])
+        name = items[0].text()
         profile = self.app.current_profile
         game_key = profile["game"]
 
-        if name not in self.app.modules.get(game_key, {}):
+        cfg = self.app.modules.get(game_key, {}).get(name)
+        if not cfg:
             return
 
-        cfg = self.app.modules[game_key][name]
-
-        self.entry_name.delete(0, tk.END)
-        self.entry_name.insert(0, name)
-
-        self.entry_path.delete(0, tk.END)
-        self.entry_path.insert(0, cfg.get("path", ""))
+        self.entry_name.setText(name)
+        self.entry_path.setText(cfg.get("path", ""))
 
         ignore = ", ".join(cfg.get("ignore_ext", []))
-        self.entry_ignore.delete(0, tk.END)
-        self.entry_ignore.insert(0, ignore)
+        self.entry_ignore.setText(ignore)
 
     # ---------------------------------------------------------
     # Añadir módulo
@@ -106,15 +111,15 @@ class ModulesTab:
     def add_module(self):
         profile = self.app.current_profile
         if not profile:
-            messagebox.showerror("Error", "No hay perfil seleccionado")
+            QMessageBox.critical(self, "Error", "No hay perfil seleccionado")
             return
 
-        name = self.entry_name.get().strip()
-        path = self.entry_path.get().strip()
-        ignore = [ext.strip() for ext in self.entry_ignore.get().split(",") if ext.strip()]
+        name = self.entry_name.text().strip()
+        path = self.entry_path.text().strip()
+        ignore = [ext.strip() for ext in self.entry_ignore.text().split(",") if ext.strip()]
 
         if not name or not path:
-            messagebox.showerror("Error", "Nombre y ruta son obligatorios")
+            QMessageBox.critical(self, "Error", "Nombre y ruta son obligatorios")
             return
 
         game_key = profile["game"]
@@ -136,17 +141,17 @@ class ModulesTab:
     def save_module(self):
         profile = self.app.current_profile
         if not profile:
-            messagebox.showerror("Error", "No hay perfil seleccionado")
+            QMessageBox.critical(self, "Error", "No hay perfil seleccionado")
             return
 
-        name = self.entry_name.get().strip()
-        path = self.entry_path.get().strip()
-        ignore = [ext.strip() for ext in self.entry_ignore.get().split(",") if ext.strip()]
+        name = self.entry_name.text().strip()
+        path = self.entry_path.text().strip()
+        ignore = [ext.strip() for ext in self.entry_ignore.text().split(",") if ext.strip()]
 
         game_key = profile["game"]
 
         if name not in self.app.modules.get(game_key, {}):
-            messagebox.showerror("Error", "El módulo no existe")
+            QMessageBox.critical(self, "Error", "El módulo no existe")
             return
 
         self.app.modules[game_key][name]["path"] = path
@@ -161,14 +166,14 @@ class ModulesTab:
     def delete_module(self):
         profile = self.app.current_profile
         if not profile:
-            messagebox.showerror("Error", "No hay perfil seleccionado")
+            QMessageBox.critical(self, "Error", "No hay perfil seleccionado")
             return
 
-        sel = self.listbox.curselection()
-        if not sel:
+        items = self.listbox.selectedItems()
+        if not items:
             return
 
-        name = self.listbox.get(sel[0])
+        name = items[0].text()
         game_key = profile["game"]
 
         if name in self.app.modules.get(game_key, {}):
