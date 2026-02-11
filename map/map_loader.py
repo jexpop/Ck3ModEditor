@@ -39,6 +39,15 @@ class MapLoader:
         # Cargar definition.csv
         self.load_definition()
 
+        # Crear mapa color → ID de provincia
+        self.color_to_province_id = {}
+        for prov in self.provinces.values():
+            r, g, b = prov["color"]
+            color = (r << 16) | (g << 8) | b
+            self.color_to_province_id[color] = prov["id"]
+
+        print("TEST color_to_province_id size:", len(self.color_to_province_id))
+
         # Marcar colores no definidos como UNKNOWN
         self.mark_unknown_colors()
 
@@ -100,6 +109,8 @@ class MapLoader:
 
                 self.province_by_color[(r, g, b)] = self.provinces[pid]
 
+        print("TEST provinces loaded:", len(self.provinces))
+
     # ------------------------------
     # Marcar colores no definidos como UNKNOWN
     # ------------------------------
@@ -155,7 +166,10 @@ class MapLoader:
         self.impassable = extract("impassable_mountains")
         self.impassable_seas = extract("impassable_seas")
 
-        # Todas las provincias mencionadas en default.map
+        print("TEST sea:", len(self.sea))
+        print("TEST lakes:", len(self.lakes))
+        print("TEST rivers:", len(self.rivers))
+
         in_default = (
             self.sea
             | self.lakes
@@ -164,7 +178,6 @@ class MapLoader:
             | self.impassable_seas
         )
 
-        # Clasificación
         for (r, g, b), info in self.province_by_color.items():
             pid = info["id"]
 
@@ -271,3 +284,9 @@ class MapLoader:
     # ------------------------------
     def get_province_from_color(self, r, g, b):
         return self.province_by_color.get((r, g, b), None)
+
+    # ------------------------------
+    # Obtener provincia por ID
+    # ------------------------------
+    def get_province_from_id(self, pid):
+        return self.provinces.get(pid)

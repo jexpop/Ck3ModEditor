@@ -6,7 +6,7 @@ import json
 
 # Pestañas Qt
 from ui.ui_profile_qt import ProfileTabQt
-from ui.ui_history_qt import HistoryTabQt
+from ui.history import HistoryTabQt
 from ui.ui_dates_qt import DatesTabQt
 from ui.ui_modules_qt import ModulesTabQt
 from ui.ui_logs_qt import LogsTabQt
