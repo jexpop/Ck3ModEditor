@@ -26,25 +26,18 @@ class MapViewerQt(QGraphicsView):
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
 
-        # Cursor flecha por defecto
         self.setCursor(Qt.CursorShape.ArrowCursor)
-
-        # NO usar drag automático de Qt, lo hacemos manual
         self.setDragMode(QGraphicsView.DragMode.NoDrag)
 
-        # Imagen original
         self.pixmap = QPixmap(image_path)
         self.original_img = self.pixmap.toImage()
         self.w = self.original_img.width()
         self.h = self.original_img.height()
 
-        # province_id_map
         self.province_id_map = generate_province_id_map(self.original_img, self.map_loader)
 
-        # Cache de highlights
         self.highlight_cache = {}
 
-        # Capas
         self.colored_layer = QGraphicsPixmapItem()
         self.colored_layer.setZValue(10)
         self.scene.addItem(self.colored_layer)
@@ -53,31 +46,22 @@ class MapViewerQt(QGraphicsView):
         self.highlight_layer.setZValue(30)
         self.scene.addItem(self.highlight_layer)
 
-        # Cargar mapa HALF
         self.generate_or_load_cached_map()
 
-        # Ajustar escena al tamaño del mapa HALF
         half_w = self.colored_layer.pixmap().width()
         half_h = self.colored_layer.pixmap().height()
         self.scene.setSceneRect(QRectF(0, 0, half_w, half_h))
 
-        # Configuración visual
         self.setRenderHints(
             QPainter.RenderHint.Antialiasing
             | QPainter.RenderHint.SmoothPixmapTransform
         )
         self.setTransformationAnchor(QGraphicsView.ViewportAnchor.AnchorUnderMouse)
 
-        # Escala base (zoom mínimo) se calcula en el primer resize
         self.base_scale = None
-
-        # Estado del drag manual
         self.dragging = False
         self.last_pos = None
 
-    # ============================================================
-    # Recalcular base_scale cuando el widget ya tiene tamaño real
-    # ============================================================
     def resizeEvent(self, event):
         super().resizeEvent(event)
 
@@ -85,9 +69,6 @@ class MapViewerQt(QGraphicsView):
             self.fit_to_window()
             self.base_scale = self.transform().m11()
 
-    # ============================================================
-    # Cargar mapa recoloreado HALF
-    # ============================================================
     def generate_or_load_cached_map(self):
         base_dir = os.path.dirname(self.image_path)
         cache_dir = os.path.join(base_dir, "ck3_map_cache")
@@ -128,16 +109,10 @@ class MapViewerQt(QGraphicsView):
 
         self.colored_layer.setPixmap(QPixmap.fromImage(qimg_half))
 
-    # ============================================================
-    # Ajustar al tamaño de ventana
-    # ============================================================
     def fit_to_window(self):
         self.resetTransform()
         self.fitInView(self.scene.sceneRect(), Qt.AspectRatioMode.KeepAspectRatio)
 
-    # ============================================================
-    # Highlight
-    # ============================================================
     def highlight_province(self, province):
         pid = province["id"]
 
@@ -156,9 +131,6 @@ class MapViewerQt(QGraphicsView):
         self.highlight_cache[pid] = pix
         self.highlight_layer.setPixmap(pix)
 
-    # ============================================================
-    # Zoom
-    # ============================================================
     def wheelEvent(self, event: QWheelEvent):
         if event.angleDelta().y() > 0:
             self.zoom_in()
@@ -171,7 +143,6 @@ class MapViewerQt(QGraphicsView):
 
         scale = self.transform().m11()
 
-        # Zoom máximo ×30
         if scale > self.base_scale * 30:
             return
 
@@ -183,18 +154,16 @@ class MapViewerQt(QGraphicsView):
 
         scale = self.transform().m11()
 
-        # Zoom mínimo = mapa ajustado a ventana
-        if scale <= self.base_scale:
-            self.fit_to_window()
+        # Si el siguiente paso se pasaría del mínimo, ajustamos justo a base_scale
+        next_scale = scale / 1.15
+        if next_scale <= self.base_scale:
+            factor = self.base_scale / scale
+            self.scale(factor, factor)
             return
 
         self.scale(1/1.15, 1/1.15)
 
-    # ============================================================
-    # Movimiento y selección
-    # ============================================================
     def mousePressEvent(self, event):
-        # Botón izquierdo → selección (NO arrastre)
         if event.button() == Qt.MouseButton.LeftButton:
             pos = event.position()
             scene_pos = self.mapToScene(pos.toPoint())
@@ -214,7 +183,6 @@ class MapViewerQt(QGraphicsView):
 
             return
 
-        # Botón derecho → empezar drag manual
         if event.button() == Qt.MouseButton.RightButton:
             self.dragging = True
             self.last_pos = event.position()
