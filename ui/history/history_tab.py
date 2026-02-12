@@ -7,6 +7,11 @@ from PyQt6.QtCore import QTimer
 from map.map_loader import MapLoader
 from .viewer import MapViewerQt
 
+# -----------------------------
+# IMPORTAMOS EL PARSER DE HISTORIA
+# -----------------------------
+from ui.history.title_history_loader import load_all_title_history, get_holder_at_year
+
 
 class HistoryTabQt(QWidget):
     def __init__(self, app):
@@ -15,6 +20,9 @@ class HistoryTabQt(QWidget):
 
         self.viewer = None
         self.map_loader = MapLoader(self.find_file)
+
+        # Aquí guardaremos toda la historia de títulos
+        self.title_history = {}
 
         self.build_ui()
 
@@ -36,6 +44,13 @@ class HistoryTabQt(QWidget):
         self.info_layout.addWidget(self.label_name)
         self.info_layout.addWidget(self.label_color)
         self.info_layout.addWidget(self.label_type)
+
+        # -----------------------------
+        # NUEVO: HOLDER EN 800
+        # -----------------------------
+        self.label_holder800 = QLabel("Holder en 800: -")
+        self.info_layout.addWidget(self.label_holder800)
+
         self.info_layout.addStretch(1)
 
         btn_row = QHBoxLayout()
@@ -97,23 +112,45 @@ class HistoryTabQt(QWidget):
 
         self.map_loader = MapLoader(self.find_file)
 
+        # -----------------------------
+        # CARGAR HISTORIA DE TÍTULOS (MOD → JUEGO)
+        # -----------------------------
+        game_root = self.app.current_profile["game_root"]
+        mod_root = self.app.current_profile["mod_root"]
+
+        self.title_history = load_all_title_history(game_root, mod_root)
+
         self.viewer = MapViewerQt(path, self.map_loader)
         self.viewer.province_clicked.connect(self.update_province_info)
         self.map_layout.addWidget(self.viewer)
 
-        # ❌ ESTA LÍNEA ERA EL PROBLEMA
-        # QTimer.singleShot(0, self.viewer.fit_to_window)
-
-        # ✔ NO HACEMOS NADA AQUÍ
-        # El viewer ya gestiona su propio fit en resizeEvent
-
     def update_province_info(self, province: dict):
-        pid = province["id"]
-        name = province["name"]
-        r, g, b = province["color"]
-        t = province["type"]
+        try:
+            pid = province["id"]
+            name = province["name"]  # ejemplo: "xainza"
+            r, g, b = province["color"]
+            t = province["type"]
 
-        self.label_id.setText(f"ID: {pid}")
-        self.label_name.setText(f"Nombre: {name}")
-        self.label_color.setText(f"Color: {r}, {g}, {b}")
-        self.label_type.setText(f"Tipo: {t}")
+            self.label_id.setText(f"ID: {pid}")
+            self.label_name.setText(f"Nombre: {name}")
+            self.label_color.setText(f"Color: {r}, {g}, {b}")
+            self.label_type.setText(f"Tipo: {t}")
+
+            # -----------------------------
+            # HOLDER EN EL AÑO 800
+            # -----------------------------
+            county = "c_" + name  # ejemplo: "c_xainza"
+
+            holder = None
+            if county in self.title_history:
+                holder = get_holder_at_year(self.title_history[county], 11200)
+
+            self.label_holder800.setText(f"Holder en 800: {holder}")
+
+            print("DEBUG province name:", name)
+            print("DEBUG county key:", "c_" + name)
+            print("DEBUG first 20 keys:", list(self.title_history.keys())[:20])
+
+
+        except Exception as e:
+            print("ERROR EN update_province_info:", e)
