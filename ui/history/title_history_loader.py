@@ -5,46 +5,70 @@ import re
 # Expresiones regulares
 # -----------------------------
 DATE_RE = re.compile(r'(\d+)\.(\d+)\.(\d+)')
-TITLE_RE = re.compile(r'^(\w+)\s*=\s*\{')
-HOLDER_RE = re.compile(r'holder\s*=\s*(\d+)')
-LIEGE_RE = re.compile(r'liege\s*=\s*"?(.*?)"?$')
+TITLE_RE = re.compile(r'^\s*([becdk]_[A-Za-z0-9_]+)\s*=\s*\{')
+HOLDER_RE = re.compile(r'holder\s*=\s*(\w+)')
+LIEGE_RE = re.compile(r'liege\s*=\s*(\w+)')
 
 
 # -----------------------------
 # Parsear un archivo individual
 # -----------------------------
 def parse_title_history_file(path):
+    """
+    Extrae TODOS los títulos dentro del archivo.
+    Ejemplo:
+        k_iceland.txt contiene:
+            c_sudurland = { ... }
+            c_vesturland = { ... }
+            b_reydarfjall = { ... }
+    """
     data = {}
     current_title = None
     current_year = None
+    stack = 0
 
-    # CK3 tiene archivos con codificaciones raras → errors="ignore"
     with open(path, "r", encoding="utf-8", errors="ignore") as f:
-        for line in f:
-            line = line.strip()
+        for raw in f:
+            line = raw.strip()
 
-            # Detectar inicio de título
+            # Inicio de título
             m = TITLE_RE.match(line)
             if m:
                 current_title = m.group(1)
                 data[current_title] = {"holder": [], "liege": []}
+                stack = 1
+                current_year = None
+                #print(" Título:", current_title)
                 continue
 
-            # Detectar fecha
+            # Contador de llaves
+            if "{" in line:
+                stack += line.count("{")
+            if "}" in line:
+                stack -= line.count("}")
+                if stack <= 0:
+                    current_title = None
+                    current_year = None
+                continue
+
+            if not current_title:
+                continue
+
+            # Fecha
             m = DATE_RE.search(line)
             if m:
                 current_year = int(m.group(1))
                 continue
 
-            # Detectar holder
+            # Holder
             m = HOLDER_RE.search(line)
-            if m and current_title and current_year is not None:
-                data[current_title]["holder"].append((current_year, int(m.group(1))))
+            if m and current_year is not None:
+                data[current_title]["holder"].append((current_year, m.group(1)))
                 continue
 
-            # Detectar liege
+            # Liege
             m = LIEGE_RE.search(line)
-            if m and current_title and current_year is not None:
+            if m and current_year is not None:
                 data[current_title]["liege"].append((current_year, m.group(1)))
                 continue
 
@@ -54,41 +78,28 @@ def parse_title_history_file(path):
 # -----------------------------
 # Cargar historia del juego y del mod
 # -----------------------------
-def load_all_title_history(game_root, mod_root=None):
-    """
-    Carga todos los archivos de history/titles/ del juego y del mod.
-    El mod sobrescribe al juego.
-    """
+def load_all_title_history(root):
     result = {}
 
-    # -----------------------------
-    # 1. Cargar historia del juego
-    # -----------------------------
-    game_folder = os.path.join(game_root, "history", "titles")
-    if os.path.isdir(game_folder):
-        for fname in os.listdir(game_folder):
-            if fname.endswith(".txt"):
-                path = os.path.join(game_folder, fname)
-                file_data = parse_title_history_file(path)
-                for title, info in file_data.items():
-                    result[title] = info
+    folder = os.path.join(root, "history", "titles")
+    if not os.path.isdir(folder):
+        print("NO EXISTE:", folder)
+        return result
 
-    # -----------------------------
-    # 2. Cargar historia del mod (sobrescribe)
-    # -----------------------------
-    if mod_root:
-        mod_folder = os.path.join(mod_root, "history", "titles")
-        if os.path.isdir(mod_folder):
-            for fname in os.listdir(mod_folder):
-                if fname.endswith(".txt"):
-                    path = os.path.join(mod_folder, fname)
-                    file_data = parse_title_history_file(path)
-                    for title, info in file_data.items():
-                        result[title] = info  # sobrescribe al juego
+    #print("Leyendo history/titles desde:", folder)
 
-    # -----------------------------
-    # Ordenar listas por fecha
-    # -----------------------------
+    for fname in os.listdir(folder):
+        if not fname.endswith(".txt"):
+            continue
+
+        path = os.path.join(folder, fname)
+        file_data = parse_title_history_file(path)
+        #print(f"{fname}: {len(file_data)} títulos")
+
+        result.update(file_data)
+
+    #print("TOTAL títulos cargados:", len(result))
+
     for title, info in result.items():
         info["holder"].sort()
         info["liege"].sort()

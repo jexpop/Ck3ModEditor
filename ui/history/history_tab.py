@@ -2,90 +2,37 @@ import os
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QLabel, QPushButton, QHBoxLayout
 )
-from PyQt6.QtCore import QTimer
 
 from map.map_loader import MapLoader
 from .viewer import MapViewerQt
 
-# -----------------------------
-# IMPORTAMOS EL PARSER DE HISTORIA
-# -----------------------------
 from ui.history.title_history_loader import load_all_title_history, get_holder_at_year
 
 
 class HistoryTabQt(QWidget):
-    def __init__(self, app):
+    def __init__(self, app, mode="base"):
         super().__init__()
         self.app = app
+        self.mode = mode   # "base" o "mod"
 
         self.viewer = None
-        self.map_loader = MapLoader(self.find_file)
-
-        # Aquí guardaremos toda la historia de títulos
+        self.map_loader = None
         self.title_history = {}
 
         self.build_ui()
 
-    def build_ui(self):
-        self.layout = QVBoxLayout(self)
+    # ---------------------------------------------------------
+    # FIND_FILE según la vista
+    # ---------------------------------------------------------
+    def find_file_base(self, relative_path):
+        game_root = self.app.current_profile["game_root"]
+        full = os.path.join(game_root, relative_path)
+        return full if os.path.isfile(full) else None
 
-        self.info_label = QLabel("Mapa del juego")
-        self.layout.addWidget(self.info_label)
-
-        self.info_panel = QWidget()
-        self.info_layout = QVBoxLayout(self.info_panel)
-
-        self.label_id = QLabel("ID: -")
-        self.label_name = QLabel("Nombre: -")
-        self.label_color = QLabel("Color: -")
-        self.label_type = QLabel("Tipo: -")
-
-        self.info_layout.addWidget(self.label_id)
-        self.info_layout.addWidget(self.label_name)
-        self.info_layout.addWidget(self.label_color)
-        self.info_layout.addWidget(self.label_type)
-
-        # -----------------------------
-        # NUEVO: HOLDER EN 800
-        # -----------------------------
-        self.label_holder800 = QLabel("Holder en 800: -")
-        self.info_layout.addWidget(self.label_holder800)
-
-        self.info_layout.addStretch(1)
-
-        btn_row = QHBoxLayout()
-        btn_zoom_in = QPushButton("Zoom +")
-        btn_zoom_out = QPushButton("Zoom -")
-        btn_fit = QPushButton("Ajustar a ventana")
-        btn_reset = QPushButton("Zoom 100%")
-
-        btn_row.addWidget(btn_zoom_in)
-        btn_row.addWidget(btn_zoom_out)
-        btn_row.addWidget(btn_fit)
-        btn_row.addWidget(btn_reset)
-
-        self.map_container = QWidget()
-        self.map_layout = QVBoxLayout(self.map_container)
-        self.map_layout.addLayout(btn_row)
-
-        main_row = QHBoxLayout()
-        main_row.addWidget(self.info_panel)
-        main_row.addWidget(self.map_container, 1)
-
-        self.layout.addLayout(main_row)
-
-        btn_zoom_in.clicked.connect(lambda: self.viewer.zoom_in() if self.viewer else None)
-        btn_zoom_out.clicked.connect(lambda: self.viewer.zoom_out() if self.viewer else None)
-        btn_fit.clicked.connect(lambda: self.viewer.fit_to_window() if self.viewer else None)
-        btn_reset.clicked.connect(lambda: self.viewer.fit_to_window() if self.viewer else None)
-
-    def find_file(self, relative_path):
+    def find_file_mod(self, relative_path):
         profile = self.app.current_profile
-        if not profile:
-            return None
-
-        mod_root = profile.get("mod_root", "")
-        game_root = profile.get("game_root", "")
+        mod_root = profile["mod_root"]
+        game_root = profile["game_root"]
 
         mod_path = os.path.join(mod_root, relative_path)
         if os.path.isfile(mod_path):
@@ -97,60 +44,150 @@ class HistoryTabQt(QWidget):
 
         return None
 
+    # ---------------------------------------------------------
+    # UI
+    # ---------------------------------------------------------
+    def build_ui(self):
+        self.layout = QVBoxLayout(self)
+
+        self.info_label = QLabel("Mapa del juego")
+        self.layout.addWidget(self.info_label)
+
+        # Panel izquierdo
+        self.info_panel = QWidget()
+        self.info_layout = QVBoxLayout(self.info_panel)
+
+        self.label_id = QLabel("ID: -")
+        self.label_barony = QLabel("Baronía: -")
+        self.label_color = QLabel("Color: -")
+        self.label_type = QLabel("Tipo: -")
+        self.label_holder = QLabel("Holder: -")
+
+        self.info_layout.addWidget(self.label_id)
+        self.info_layout.addWidget(self.label_barony)
+        self.info_layout.addWidget(self.label_color)
+        self.info_layout.addWidget(self.label_type)
+        self.info_layout.addWidget(self.label_holder)
+        self.info_layout.addStretch(1)
+
+        # Botones de zoom
+        btn_row = QHBoxLayout()
+        btn_zoom_in = QPushButton("Zoom +")
+        btn_zoom_out = QPushButton("Zoom -")
+        btn_fit = QPushButton("Ajustar a ventana")
+        btn_reset = QPushButton("Zoom 100%")
+
+        btn_row.addWidget(btn_zoom_in)
+        btn_row.addWidget(btn_zoom_out)
+        btn_row.addWidget(btn_fit)
+        btn_row.addWidget(btn_reset)
+
+        # Contenedor del mapa
+        self.map_container = QWidget()
+        self.map_layout = QVBoxLayout(self.map_container)
+        self.map_layout.addLayout(btn_row)
+
+        # Layout principal
+        main_row = QHBoxLayout()
+        main_row.addWidget(self.info_panel)
+        main_row.addWidget(self.map_container, 1)
+
+        self.layout.addLayout(main_row)
+
+        # Conexiones
+        btn_zoom_in.clicked.connect(lambda: self.viewer.zoom_in() if self.viewer else None)
+        btn_zoom_out.clicked.connect(lambda: self.viewer.zoom_out() if self.viewer else None)
+        btn_fit.clicked.connect(lambda: self.viewer.fit_to_window() if self.viewer else None)
+        btn_reset.clicked.connect(lambda: self.viewer.fit_to_window() if self.viewer else None)
+
+    # ---------------------------------------------------------
+    # REFRESH según la vista
+    # ---------------------------------------------------------
     def refresh(self):
         if self.viewer:
             self.viewer.setParent(None)
             self.viewer = None
 
-        path = self.find_file("map_data/provinces.png")
+        profile = self.app.current_profile
+        game_root = profile["game_root"]
+        mod_root = profile["mod_root"]
 
+        # Vista BASE
+        if self.mode == "base":
+            find_file = self.find_file_base
+            history_root = game_root
+            self.info_label.setText("Vista: Juego Base")
+
+        # Vista MOD
+        else:
+            find_file = self.find_file_mod
+            history_root = mod_root
+            self.info_label.setText("Vista: Mod")
+
+        # Cargar mapa
+        path = find_file("map_data/provinces.png")
         if not path:
             self.info_label.setText("No se encontró provinces.png")
             return
 
-        self.info_label.setText(f"Mapa cargado: {path}")
+        self.map_loader = MapLoader(find_file)
 
-        self.map_loader = MapLoader(self.find_file)
+        # Cargar historia de títulos
+        self.title_history = load_all_title_history(history_root)
 
-        # -----------------------------
-        # CARGAR HISTORIA DE TÍTULOS (MOD → JUEGO)
-        # -----------------------------
-        game_root = self.app.current_profile["game_root"]
-        mod_root = self.app.current_profile["mod_root"]
-
-        self.title_history = load_all_title_history(game_root, mod_root)
-
+        # Crear viewer
         self.viewer = MapViewerQt(path, self.map_loader)
         self.viewer.province_clicked.connect(self.update_province_info)
         self.map_layout.addWidget(self.viewer)
 
+    # ---------------------------------------------------------
+    # CLICK EN PROVINCIA
+    # ---------------------------------------------------------
     def update_province_info(self, province: dict):
         try:
             pid = province["id"]
-            name = province["name"]  # ejemplo: "xainza"
             r, g, b = province["color"]
             t = province["type"]
 
+            #print("PID:", pid)
+
+            # Datos básicos
             self.label_id.setText(f"ID: {pid}")
-            self.label_name.setText(f"Nombre: {name}")
             self.label_color.setText(f"Color: {r}, {g}, {b}")
             self.label_type.setText(f"Tipo: {t}")
 
             # -----------------------------
-            # HOLDER EN EL AÑO 800
+            # Resolver baronía (b_*)
             # -----------------------------
-            county = "c_" + name  # ejemplo: "c_xainza"
+            barony = self.map_loader.get_title_from_province_id(pid)
+            self.label_barony.setText(f"Baronía: {barony}")
+            
+            #print("Baronía encontrada:", barony)
 
-            holder = None
+            if not barony:
+                self.label_holder.setText("Holder: (sin baronía)")
+                return
+
+            # -----------------------------
+            # Resolver condado (c_*)
+            # -----------------------------
+            county = self.map_loader.get_county_from_barony(barony)
+
+            if not county:
+                self.label_holder.setText("Holder: (sin condado)")
+                return
+
+            # Año según modo
+            year = 1200 if self.mode == "base" else 11200
+
+            # -----------------------------
+            # Buscar holder
+            # -----------------------------
             if county in self.title_history:
-                holder = get_holder_at_year(self.title_history[county], 11200)
-
-            self.label_holder800.setText(f"Holder en 800: {holder}")
-
-            print("DEBUG province name:", name)
-            print("DEBUG county key:", "c_" + name)
-            print("DEBUG first 20 keys:", list(self.title_history.keys())[:20])
-
+                holder = get_holder_at_year(self.title_history[county], year)
+                self.label_holder.setText(f"Holder en {year}: {holder}")
+            else:
+                self.label_holder.setText(f"Holder en {year}: (sin datos)")
 
         except Exception as e:
             print("ERROR EN update_province_info:", e)
