@@ -94,7 +94,13 @@ class MapViewerQt(QGraphicsView):
             except Exception:
                 pass
 
-        qimg_half = generate_colored_map_half(self.original_img, self.map_loader.lut)
+        from .renderer import generate_base_map_half
+
+        qimg_half = generate_base_map_half(
+            self.original_img,
+            self.map_loader.lut,
+            self.province_id_map
+        )
         qimg_half.save(cache_png)
 
         json.dump(
