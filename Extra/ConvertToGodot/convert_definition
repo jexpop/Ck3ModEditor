@@ -1,0 +1,71 @@
+import re
+import os
+
+def parse_default_map(file_path):
+    sea_ids = set()
+    lake_ids = set()
+    if not os.path.exists(file_path):
+        print(f"Error: No se encuentra {file_path}")
+        return sea_ids, lake_ids
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Extraer rangos y listas de default.map
+    ranges = re.findall(r'(sea_zones|lakes|river_provinces)\s*=\s*RANGE\s*{\s*(\d+)\s+(\d+)\s*}', content)
+    for category, start, end in ranges:
+        ids = set(range(int(start), int(end) + 1))
+        if category == 'sea_zones': sea_ids.update(ids)
+        else: lake_ids.update(ids)
+
+    lists = re.findall(r'(sea_zones|lakes|river_provinces)\s*=\s*LIST\s*{\s*([^}]+)\s*}', content)
+    for category, ids_str in lists:
+        ids = set(map(int, ids_str.split()))
+        if category == 'sea_zones': sea_ids.update(ids)
+        else: lake_ids.update(ids)
+            
+    return sea_ids, lake_ids
+
+def generate_provinces():
+    # Detectar la carpeta del script actual
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    path_map = os.path.join(base_dir, 'default.map')
+    path_csv = os.path.join(base_dir, 'definition.csv')
+    path_out = os.path.join(base_dir, 'Provinces_New.txt')
+
+    seas, lakes = parse_default_map(path_map)
+    output = []
+    
+    if not os.path.exists(path_csv):
+        print(f"Error: No se encuentra {path_csv}")
+        return
+
+    # Leer definition.csv omitiendo líneas con #
+    with open(path_csv, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            
+            parts = line.split(';')
+            if len(parts) < 4: continue
+                
+            try:
+                prov_id = int(parts[0])
+                r, g, b = parts[1], parts[2], parts[3]
+                
+                # Asignar terreno según default.map
+                if prov_id in seas: terrain = "sea"
+                elif prov_id in lakes: terrain = "lake"
+                else: terrain = "land"
+                
+                output.append(f"{prov_id},{r},{g},{b},{terrain},0.00,0.00")
+            except ValueError: continue
+
+    with open(path_out, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(output))
+    
+    print(f"¡Hecho! Archivo creado en: {path_out}")
+
+if __name__ == "__main__":
+    generate_provinces()

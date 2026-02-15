@@ -49,7 +49,10 @@
             "common\\defines\\00_defines.txt",
             "core_l_spanish",
             "hud",
-            "frontend_bookmarks"
+            "frontend_bookmarks",
+            "default",
+            "definition",
+            "defines"
         ]
     }
 ]

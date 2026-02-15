@@ -12,6 +12,12 @@
         },
         "frontend_bookmarks": {
             "path": "gui/frontend_bookmarks.gui"
+        },
+        "default": {
+            "path": "map_data/default.map"
+        },
+        "definition": {
+            "path": "map_data/definition.csv"
         }
     }
 }
